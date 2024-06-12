@@ -1,1 +1,1 @@
-# artTrix
+# Hello! Welcome to my project planning page.
