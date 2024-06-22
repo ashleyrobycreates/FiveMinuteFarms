@@ -1,1 +1,1 @@
-# Hello! Welcome to my project planning page.
+# Hello! Welcome to Five Minute Farms! This website was made to help make quick, easy, small farms no matter where you live. Even pot-sized tomato plants and herbs can help whip up a quick bite.
