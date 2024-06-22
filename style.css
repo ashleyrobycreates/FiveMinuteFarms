@@ -1,13 +1,30 @@
-html{ justify-content: center;
+html { justify-content: center;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: purple
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:green
 
 }
-h1{
+h1 {
     justify-content: center;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(238, 8, 238)
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:blueviolet
     
 }
+h2 { justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:blueviolet
+
+}
+aside {
+    width: 40%;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    float:right;
+    box-shadow: inset 10px 0px 10px 10px #f40488;
+    font-style: italic;
+    color: #000b10;
+  }
+  
+  aside > p {
+    margin: 0.5rem;
+  }
