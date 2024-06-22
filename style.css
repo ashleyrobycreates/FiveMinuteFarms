@@ -20,7 +20,7 @@ aside {
     padding-left: 1rem;
     margin-left: 1rem;
     float:right;
-    box-shadow: inset 10px 0px 10px 10px #f40488;
+    box-shadow: 10px 0px 10px 10px #f40488;
     font-style: italic;
     color: #000b10;
   }
