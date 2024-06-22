@@ -1,8 +1,13 @@
+html { justify-content: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: purple
 
+}
 h1 {
     justify-content: center;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: purple
+    color: rgb(238, 8, 238)
     
 }
