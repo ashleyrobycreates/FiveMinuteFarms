@@ -1,30 +1,57 @@
-html { justify-content: center;
-    font-style: italic;
+html { 
+    justify-content: center;
+    font-style: normal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:green
 
 }
 h1 {
-    justify-content: center;
+    text-align:center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:blueviolet
     
 }
-h2 { justify-content: center;
+.container {  
+    display:flex;
+    justify-content:center
+    
+}
+
+h2 { 
+    justify-content: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:blueviolet
-
+}
+.cards {
+    margin: 10px;
+    padding: 20px;
+    text-align:center;
+    
+}
+.card {
+    margin-inline-start: auto;
+    padding:5px:
+    text-align:center;
+    background-color:pink;
+   
 }
 aside {
-    width: 40%;
-    padding-left: 1rem;
+    width: 35%;
+    padding: 1rem;
     margin-left: 1rem;
+    margin-bottom: 1rem;
     float:right;
-    box-shadow: 10px 0px 10px 10px #f40488;
+    box-shadow: 10px 10px 10px 10px #f40488;
     font-style: italic;
-    color: #000b10;
+    color: #e05a07;
   }
   
   aside > p {
     margin: 0.5rem;
   }
+  footer {
+    font-style: italic;
+    color:black;
+  }
+
+ 
