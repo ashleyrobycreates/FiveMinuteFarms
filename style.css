@@ -7,8 +7,7 @@ html {
 }
 h1 {
     text-align: center;
-    color:blueviolet
-    
+    color:blueviolet 
 }
 .container {  
     display: flex;
