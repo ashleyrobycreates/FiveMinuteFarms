@@ -14,8 +14,6 @@ The resources I used for this project are as follows:
 - [Third-Party API] (https://developer.spotify.com/documentation/web-api/howtos/web-app-profile)
    - This provides the music to be played for the growing garden via a Spotify Profile on the web app.
 
-
-
 ### Project Overview
 ---
 
@@ -25,7 +23,7 @@ The project is organized as follows:
 
 - **Weather Forecast:** Using the third-party weather api the weather forecast page allows users to search for local weather. 
 
-**Spotify Profile API and Music Player:** Using the third-party music api allows users to search for various music and sounds to play for their garden from their Spotify profile. Also, a Spotify Profile API has been added to the page as well. "When the page loads, we'll check if there is a code in the callback query string. If we don't have a code, we'll redirect the user to the Spotify authorization page. Once the user authorizes the application, Spotify will redirect the user back to our application, and we'll read the code from the query string... use the code to request an access token from the Spotify token API. Then, use the access token to call the Web API to get the user's profile data and populate the user interface with the user's profile data." -Spotify
+**Spotify Profile API and Music Player:** Using the third-party music api allows users to search for various music and sounds to play for their garden from their Spotify profile located on the web app page. "When the page loads, we'll check if there is a code in the callback query string. If we don't have a code, we'll redirect the user to the Spotify authorization page. Once the user authorizes the application, Spotify will redirect the user back to our application, and we'll read the code from the query string... use the code to request an access token from the Spotify token API. Then, use the access token to call the Web API to get the user's profile data and populate the user interface with the user's profile data." -Spotify
 
 ## Features Utilized for the project
 
