@@ -4,7 +4,7 @@ The user is able to interact with the information provided by searching for avai
 The goal of the project is to demonstrate a general knowledge of HTML, CSS, and JavaScript.
 
 ## Overview
- Hello! Welcome to Five Minute Farms! This website was made to instruct anyone to make easy, small farms whether located outside or inside. According to my own research and lots of research on the web, plants respond to music and sounds. So, a Spotify media player is also included to play music/sound to help your garden grow healthier and happier. A weather app is also included for checking local weather.
+ Hello! Welcome to Five Minute Farms, or Melodic Garden! This website was made to instruct anyone to make easy, small farms. A weather app is included for checking local weather. Also, according to my own research and web based research, plants DO respond to music and sounds! For this reason, a Spotify profile media player is included for users to login and play music/soundwaves to help their garden grow healthier and happier. Happy plants = happy harvest.
 
 ## Resources
 The resources I used for this project are as follows:
@@ -42,11 +42,11 @@ The project is organized as follows:
 2. Clone this repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/github-username/weather-forecasting-project.git
+git clone https://github.com/ashleyrobycreates/Five-Minute-Farms.git
 ```
 3. Navigate to the project directory:
 ```bash
-cd weather-forecasting-project
+cd Five-Minute-Farms
 ```
 4. Open the project directory in VsCode:
 ```bash
