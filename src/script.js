@@ -1,6 +1,6 @@
-const clientId = "daafaef84f6645a58fa7a92405cf7bbc"; 
-// Replace with your client ID
-const code = undefined;
+const clientId = "daafaef84f6645a58fa7a92405cf7bbc";// Replace with your client ID
+const params = new URLSearchParams(window.location.search);
+const code = params.get("code");
 
 if (!code) {
     redirectToAuthCodeFlow(clientId);
@@ -46,10 +46,6 @@ async function generateCodeChallenge(codeVerifier) {
         .replace(/=+$/, '');
 }
 
-const clientId = "your_client_id";
-const params = new URLSearchParams(window.location.search);
-const code = params.get("code");
-
 if (!code) {
     redirectToAuthCodeFlow(clientId);
 } else {
@@ -83,10 +79,11 @@ async function fetchProfile(token) {
     });
 
     return await result.json();
-} else {
+}
+async function main(token) {
     const profile = await fetchProfile(token);
     console.log(profile); // Profile data logs to console
-    ...
+    populateUI(profile);
 }
 function populateUI(profile) {
     document.getElementById("displayName").innerText = profile.display_name;

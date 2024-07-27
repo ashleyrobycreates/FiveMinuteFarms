@@ -10,10 +10,10 @@ The goal of the project is to demonstrate a general knowledge of HTML, CSS, and 
 The resources I used for this project are as follows:
 - [Third-Party API](https://www.weatherapi.com)
     - This provides the weather information seen on the weather forecast page.
-- [Third-Party API](https://developer.spotify.com/)
-    - This provides the music to be played for the garden.
-- [Icons](https://fonts.google.com/icons)
-    - The icons in the navigation menu were selected from this resource.
+- [Third-Party API] (https://developer.spotify.com/; 
+    - This provides the music to be played for the growing garden.
+        (https://developer.spotify.com/documentation/web-api/howtos/web-app-profile)
+    - This provides a Spotify Profile on the web app.
 
 
 ### Project Overview
@@ -23,24 +23,19 @@ The project is organized as follows:
 
 - **Landing Page:** The landing page provides the user with options to navigate the web application and gives an overview of what to expect.
 
-- **Weather Forecast:** Using the third-party weather api the weather forecast page allows users to search for their weather forecast and view future forecasts.
+- **Weather Forecast:** Using the third-party weather api the weather forecast page allows users to search for local weather. 
 
-**Spotify Music Player:** Using the third-party music api allows users to search for various music and sounds to play for their garden.
-
-- **Contact Me:** The contact-me page allows users to fill in a form and submit it. The information from that form will be stored using an external form.
+**Spotify Profile API and Music Player:** Using the third-party music api allows users to search for various music and sounds to play for their garden from their Spotify profile. Also, a Spotify Profile API has been added to the page as well. "When the page loads, we'll check if there is a code in the callback query string. If we don't have a code, we'll redirect the user to the Spotify authorization page. Once the user authorizes the application, Spotify will redirect the user back to our application, and we'll read the code from the query string... use the code to request an access token from the Spotify token API. Then, use the access token to call the Web API to get the user's profile data and populate the user interface with the user's profile data." -Spotify
 
 ## Features Utilized for the project
 
   | Feature        | Description                           |
   |----------------|---------------------------------------|
-  | Use arrays, objects to store and retrieve information| The four day forecast is stored in an array of objects and displayed on the Weather Forecast page|
-  | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party weather API and 3rd part music player to display and/or play info|
-  | Visualize data in a user friendly way | 
-  | Create a form and store the submitted values using an external API     | The Contact Me page allows the user to input information which is stored using [getpantry.cloud](https://getpantry.cloud/) |
+  | Use arrays, objects to store and retrieve information| The forecast is stored in an array of objects and displayed on the Weather page| The Spotify Profile lets users login and retrieve data from Spotify music app. 
+  | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party weather API and 3rd part music player to display profile information and/or play info|
+  | Visualize data in a user friendly way | Relaxing images and color scheme, like candy for the eye. |
   | Visually appealing UI      | Created a clean and modern UI with a color palette that is cohesive across the project. |
   | Responsive Design | Each page uses media queries and flexbox to adapt the design for multiple screen sizes, and was developed using a mobile-first approach. |
-
-
 
 ## Getting Started
 1. Visit the Weather API webpage to retrieve your free API key: [Third-Party API](https://www.weatherapi.com)
