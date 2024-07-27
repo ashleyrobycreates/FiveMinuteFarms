@@ -1,5 +1,6 @@
 html { 
     justify-content: center;
+    font-size: small;
     font-style: normal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:green
@@ -7,6 +8,7 @@ html {
 }
 h1 {
     text-align: center;
+    font-size: medium;
     color:blueviolet 
 }
 .container {  
@@ -24,6 +26,7 @@ h1 {
 }
 h2 { 
     justify-content: center;
+    font-size: medium;
     color:rgb(138, 43, 226)
 }
 .cards {
@@ -55,6 +58,7 @@ aside {
   }
   footer {
     font-style: italic;
+    font-size: small;
     color:black;
   }
 
