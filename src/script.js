@@ -1,8 +1,6 @@
 const clientId = "daafaef84f6645a58fa7a92405cf7bbc"; 
-// Replace with your clientID or const clientId = "your_client_id";?
-const params = new URLSearchParams(window.location.search);
-const code = params.get("code"); ID
-
+// Replace with your client ID
+const code = undefined;
 
 if (!code) {
     redirectToAuthCodeFlow(clientId);
@@ -47,6 +45,19 @@ async function generateCodeChallenge(codeVerifier) {
         .replace(/\//g, '_')
         .replace(/=+$/, '');
 }
+
+const clientId = "your_client_id";
+const params = new URLSearchParams(window.location.search);
+const code = params.get("code");
+
+if (!code) {
+    redirectToAuthCodeFlow(clientId);
+} else {
+    const accessToken = await getAccessToken(clientId, code);
+    const profile = await fetchProfile(accessToken);
+    populateUI(profile);
+}
+
 export async function getAccessToken(clientId, code) {
     const verifier = localStorage.getItem("verifier");
 
@@ -72,4 +83,23 @@ async function fetchProfile(token) {
     });
 
     return await result.json();
+} else {
+    const profile = await fetchProfile(token);
+    console.log(profile); // Profile data logs to console
+    ...
+}
+function populateUI(profile) {
+    document.getElementById("displayName").innerText = profile.display_name;
+    if (profile.images[0]) {
+        const profileImage = new Image(200, 200);
+        profileImage.src = profile.images[0].url;
+        document.getElementById("avatar").appendChild(profileImage);
+        document.getElementById("imgUrl").innerText = profile.images[0].url;
+    }
+    document.getElementById("id").innerText = profile.id;
+    document.getElementById("email").innerText = profile.email;
+    document.getElementById("uri").innerText = profile.uri;
+    document.getElementById("uri").setAttribute("href", profile.external_urls.spotify);
+    document.getElementById("url").innerText = profile.href;
+    document.getElementById("url").setAttribute("href", profile.href);
 }
