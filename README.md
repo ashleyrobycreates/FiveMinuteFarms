@@ -10,10 +10,10 @@ The goal of the project is to demonstrate a general knowledge of HTML, CSS, and 
 The resources I used for this project are as follows:
 - [Third-Party API](https://www.weatherapi.com)
     - This provides the weather information seen on the weather forecast page.
-- [Third-Party API] (https://developer.spotify.com/; 
-    - This provides the music to be played for the growing garden.
-        (https://developer.spotify.com/documentation/web-api/howtos/web-app-profile)
-    - This provides a Spotify Profile on the web app.
+- [Third-Party API] (https://.spotify.com/;
+- [Third-Party API] (https://developer.spotify.com/documentation/web-api/howtos/web-app-profile)
+   - This provides the music to be played for the growing garden via a Spotify Profile on the web app.
+
 
 
 ### Project Overview
