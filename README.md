@@ -35,7 +35,7 @@ The project is organized as follows:
   |----------------|---------------------------------------|
   | Use arrays, objects to store and retrieve information| The four day forecast is stored in an array of objects and displayed on the Weather Forecast page|
   | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party weather API and 3rd part music player to display and/or play info|
-  | Visualize data in a user friendly way | The weather forecast is laid out in a graph so that users can see the temperature fluctuation over time. |
+  | Visualize data in a user friendly way | 
   | Create a form and store the submitted values using an external API     | The Contact Me page allows the user to input information which is stored using [getpantry.cloud](https://getpantry.cloud/) |
   | Visually appealing UI      | Created a clean and modern UI with a color palette that is cohesive across the project. |
   | Responsive Design | Each page uses media queries and flexbox to adapt the design for multiple screen sizes, and was developed using a mobile-first approach. |
