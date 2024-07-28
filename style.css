@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-image: url('flowers.jpg');
+    background-image: url('img/flowers.jpg');
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
