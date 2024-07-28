@@ -18,9 +18,8 @@ body {
 }
 h1 {
     text-align: center;
-    font-size: medium;
-    color: blueviolet;
-    background-color: pink;
+    font-size: extra-large;
+    color: rgb(240, 246, 240);
 }
 .container {  
     display: grid;
@@ -28,7 +27,7 @@ h1 {
     grid-template-rows: auto; /* Rows will adjust based on content */
     gap: 10px; /* Gap between grid items */
     background-color: pink;
-    border: 5px solid #f40488;
+    border: 5px solid hsl(327, 97%, 49%);
     padding: 10px;
 }
 .container > div {
@@ -51,30 +50,54 @@ h2 {
     background-color: pink;
 }
 .cards {
-    margin: 10px;
+    margin: 10px; auto; /* Center the cards */
     padding: 20px;
     text-align:center;
-    width: 50%;
+    justify-items: center;
+    width: 90%;
     height: auto;
 
 }
 .card {
-    margin-inline-start: auto;
-    padding:5px:
-    text-align:center;
-    background-color:pink;
+    margin: 20px auto; /* Center the card */
+    padding: 5px;
+    text-align: center;
+    background-color: pink;
+    width: 75%; /* Optional: Set a width to control the size */
 }
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px #888;
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+.specific-img {
+    width: 80%; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
 aside {
-    width: 25%;
+    width: 95%;
     padding: 1rem;
     margin: 1rem;
     box-shadow: 5px 5px 5px #888;
     color: #171716;
     background-color: rgb(159, 159, 242);
-    
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+    font-family: Arial, sans-serif; /* Font style */
+    line-height: 1.5; /* Line height for better readability */
 
   }
-  
+  .chart container {
+    display: flex; /* Use flexbox to align children side by side */
+    align-items: center; /* Optional: Align items vertically center */
+    gap: 1rem; /* Optional: Add gap between the elements */
+}
+
   footer {
     font-style: italic;
     font-size: small;
@@ -84,4 +107,41 @@ aside {
     border: 5px solid #3804f4;
   }
 
- 
+ /* Profile section styles */
+#profile {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#profile h2 {
+    text-align: center;
+    color: #333;
+}
+
+#profile ul {
+    list-style-type: none;
+    padding: 0;
+}
+#profile ul li {
+    margin: 0.5rem 0;
+}
+
+#profile ul li span,
+#profile ul li a {
+    font-weight: bold;
+    color: #1db954;
+}
+
+#avatar {
+    display: block;
+    margin: 1rem auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
