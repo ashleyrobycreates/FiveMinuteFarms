@@ -6,12 +6,6 @@ html {
     color: green;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-image: url('flowers.jpg');
     background-size: cover; /* Ensures the image covers the entire viewport */
@@ -19,6 +13,8 @@ body {
     background-repeat: no-repeat; /* Prevents the image from repeating */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: green;
+    height: 100%;
+
 }
 
 
