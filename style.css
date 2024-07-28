@@ -20,6 +20,7 @@ h1 {
     text-align: center;
     font-size: medium;
     color: blueviolet;
+    background-color: pink;
 }
 .container {  
     display: grid;
@@ -67,13 +68,11 @@ aside {
     width: 95%;
     padding: 1rem;
     margin: 1rem;
-    box-shadow: 10px 10px 10px 10px #f40488;
-    font-style: italic;
-    color: #e05a07;
+    box-shadow: 5px 5px 5px #888;
+    color: #171716;
+    background-color: rgb(159, 159, 242);
   }
-  aside > p {
-    margin: 0.5rem;
-  }
+  
   footer {
     font-style: italic;
     font-size: small;
