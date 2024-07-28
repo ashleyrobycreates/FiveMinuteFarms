@@ -48,29 +48,31 @@ h2 {
     justify-content: center;
     font-size: medium;
     color:rgb(138, 43, 226)
+    background-color: pink;
 }
 .cards {
     margin: 10px;
     padding: 20px;
     text-align:center;
     width: 50%;
-    height: auto;    
+    height: auto;
+
 }
 .card {
     margin-inline-start: auto;
     padding:5px:
     text-align:center;
     background-color:pink;
-   
 }
 aside {
-    justify-content: center;
-    width: 95%;
+    width: 25%;
     padding: 1rem;
     margin: 1rem;
     box-shadow: 5px 5px 5px #888;
     color: #171716;
     background-color: rgb(159, 159, 242);
+    
+
   }
   
   footer {
@@ -78,8 +80,7 @@ aside {
     font-size: small;
     color:black;
     text-align: center;
-    padding: 1rem;
-    background-color: rgb(248, 252, 253);
+    background-color: pink;
     border: 5px solid #3804f4;
   }
 

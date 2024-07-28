@@ -13,6 +13,8 @@ The resources I used for this project are as follows:
 - [Third-Party API] (https://.spotify.com/;
 - [Third-Party API] (https://developer.spotify.com/documentation/web-api/howtos/web-app-profile)
    - This provides the music to be played for the growing garden via a Spotify Profile on the web app.
+   [Research] (www.growoya.com)
+   -This website provides planting info according to the users zone based in the U.S.A.
 
 ### Project Overview
 ---
