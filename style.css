@@ -16,14 +16,11 @@ body {
     height: 100%;
 
 }
-
-
 h1 {
     text-align: center;
     font-size: medium;
     color: blueviolet;
 }
-
 .container {  
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
@@ -33,14 +30,12 @@ h1 {
     border: 5px solid #f40488;
     padding: 10px;
 }
-
 .container > div {
     background-color: white;
     padding: 20px;
     border: 1px solid #ccc;
     text-align: center;
 }
-
 .container img {
     flex: 1 1 calc(33.333% - 20px); /* 3 items per row with gap adjustment */
     max-width: 100%;
@@ -48,7 +43,6 @@ h1 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
 h2 { 
     justify-content: center;
     font-size: medium;
@@ -58,7 +52,8 @@ h2 {
     margin: 10px;
     padding: 20px;
     text-align:center;
-    
+    width: 50%;
+    height: auto;    
 }
 .card {
     margin-inline-start: auto;
@@ -68,16 +63,14 @@ h2 {
    
 }
 aside {
-    width: 35%;
+    justify-content: center;
+    width: 95%;
     padding: 1rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    float:right;
+    margin: 1rem;
     box-shadow: 10px 10px 10px 10px #f40488;
     font-style: italic;
     color: #e05a07;
   }
-  
   aside > p {
     margin: 0.5rem;
   }
@@ -85,6 +78,10 @@ aside {
     font-style: italic;
     font-size: small;
     color:black;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(248, 252, 253);
+    border: 5px solid #3804f4;
   }
 
  
