@@ -15,18 +15,6 @@ body {
     color: green;
     height: 100%;
 
-    /* Media query for screens with a maximum width of 600px */
-    @media (max-width: 600px) {
-        html {
-            font-size: larger;
-            color: blue;
-        }
-    
-        body {
-            background-image: url('img/small-flowers.jpg');
-            font-family: Arial, sans-serif;
-            color: blue;
-            /* Existing styles */
 html { 
     justify-content: center;
     font-size: small;
@@ -45,19 +33,6 @@ body {
     height: 100%;
 }
 
-
-/* Media query for screens with a maximum width of 600px */
-@media (max-width: 600px) {
-    html {
-        font-size: larger;
-        color: blue;
-    }
-
-    body {
-        background-image: url('img/small-flowers.jpg');
-        font-family: Arial, sans-serif;
-        color: blue;
-    }
 }
 h1 {
     text-align: center;
@@ -177,4 +152,21 @@ aside {
 #profile ul li a {
     font-weight: bold;
     color: #1db954;
+}
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    #profile h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        color: #555; /* Slightly lighter color */
+    }
+
+    #profile ul li {
+        margin: 0.25rem 0; /* Reduce margin for smaller screens */
+    }
+
+    #profile ul li span,
+    #profile ul li a {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        color: #1db954; /* Keep the same color */
+    }
 }
