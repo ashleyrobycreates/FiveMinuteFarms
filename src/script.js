@@ -5,10 +5,11 @@ const code = params.get("code");
 
 if (!code) {
     redirectToAuthCodeFlow(clientId);
+
 } else {
-    const accessToken = await getAccessToken(clientId, code);
-    const profile = await fetchProfile(accessToken);
-    populateUI(profile);
+const accessToken = await getAccessToken(clientId, code);
+const profile = await fetchProfile(accessToken);
+populateUI(profile);
 }
 
 export async function redirectToAuthCodeFlow(clientId) {
@@ -20,7 +21,7 @@ export async function redirectToAuthCodeFlow(clientId) {
     const params = new URLSearchParams();
     params.append("client_id", clientId);
     params.append("response_type", "code");
-    params.append("redirect_uri", "http://localhost:5500/spotify.html";// Add your redirect URI
+    params.append("redirect_uri", "http://localhost:5500/spotify.html");// Add your redirect URI
     params.append("scope", "user-read-private user-read-email");
     params.append("code_challenge_method", "S256");
     params.append("code_challenge", challenge);
@@ -65,3 +66,32 @@ export async function getAccessToken(clientId, code) {
     const { access_token } = await result.json();
     return access_token;
 }
+async function fetchProfile(token) {
+    const result = await fetch("https://api.spotify.com/v1/me", {
+        method: "GET", headers: { Authorization: `Bearer ${token}` }
+    });
+
+    return await result.json();
+} 
+else {
+    const profile = await fetchProfile(token);
+    console.log(profile); // Profile data logs to console
+    ...
+}
+function populateUI(profile) {
+    document.getElementById("displayName").innerText = profile.display_name;
+    if (profile.images[0]) {
+        const profileImage = new Image(200, 200);
+        profileImage.src = profile.images[0].url;
+        document.getElementById("avatar").appendChild(profileImage);
+        document.getElementById("imgUrl").innerText = profile.images[0].url;
+    }
+    document.getElementById("id").innerText = profile.id;
+    document.getElementById("email").innerText = profile.email;
+    document.getElementById("uri").innerText = profile.uri;
+    document.getElementById("uri").setAttribute("href", profile.external_urls.spotify);
+    document.getElementById("url").innerText = profile.href;
+    document.getElementById("url").setAttribute("href", profile.href);
+}
+
+
