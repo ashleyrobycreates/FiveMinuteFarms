@@ -55,9 +55,9 @@ h1 {
 }
 .container {  
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
-    grid-template-rows: auto; /* Rows will adjust based on content */
-    gap: 10px; /* Gap between grid items */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+    grid-template-rows: auto; /* Rows based on content */
+    gap: 5px; /* Gap between grid items */
     background-color: pink;
     border: 5px solid hsl(327, 97%, 49%);
     padding: 10px;
@@ -69,7 +69,7 @@ h1 {
     text-align: center;
 }
 .container img {
-    flex: 1 1 calc(33.333% - 20px); /* 3 items per row with gap adjustment */
+    flex: 1 1 calc(25% - 20px); /* 4 items  */
     max-width: 100%;
     height: auto;
     border: 1px solid #ccc;
