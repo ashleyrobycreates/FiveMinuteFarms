@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="login.html" href="login.html">
     <title>Welcome to Five Minute Farms!</title>
 </head>
 <body>
@@ -18,7 +17,13 @@
    
     <h1>Welcome to Five Minute Farms!</h1>
     <header>
-       
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
     </header>
     <div class="cards">
     <div class="card">
@@ -62,6 +67,7 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
 <div class="chart container">

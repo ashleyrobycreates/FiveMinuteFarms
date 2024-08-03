@@ -1,29 +1,26 @@
-//Login form
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('login-form');
+    const loginForm = document.getElementById('loginForm');
     const username = document.getElementById('username');
     const password = document.getElementById('password');
-    const usernameErr = document.getElementById('username-err');
-    const passwordErr = document.getElementById('password-err');
 
-    form.addEventListener('submit', function(event) {
+    loginForm.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the form from submitting the traditional way
 
-        // Reset error messages
-        usernameErr.style.display = 'none';
-        passwordErr.style.display = 'none';
+        // Reset any previous error messages
+        username.classList.remove('error');
+        password.classList.remove('error');
 
         let valid = true;
 
         // Validate username
         if (username.value.trim() === '') {
-            usernameErr.style.display = 'block';
+            username.classList.add('error');
             valid = false;
         }
 
         // Validate password
         if (password.value.trim() === '') {
-            passwordErr.style.display = 'block';
+            password.classList.add('error');
             valid = false;
         }
 
@@ -59,5 +56,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-
