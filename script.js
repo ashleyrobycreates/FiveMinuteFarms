@@ -73,11 +73,38 @@ async function fetchProfile(token) {
 
     return await result.json();
 } 
-else {
-    const profile = await fetchProfile(token);
-    console.log(profile); // Profile data logs to console
-    ...
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const loginForm = document.getElementById("login-form");
+
+    loginForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Perform login logic here
+        console.log("Username:", username);
+        console.log("Password:", password);
+
+        // Example: Send login data to the server
+        // fetch('/login', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify({ username, password })
+        // })
+        // .then(response => response.json())
+        // .then(data => {
+        //     console.log('Success:', data);
+        //     // Handle successful login
+        // })
+        // .catch((error) => {
+        //     console.error('Error:', error);
+        //     // Handle login error
+        // });
+    });
+});
 function populateUI(profile) {
     document.getElementById("displayName").innerText = profile.display_name;
     if (profile.images[0]) {
@@ -93,5 +120,6 @@ function populateUI(profile) {
     document.getElementById("url").innerText = profile.href;
     document.getElementById("url").setAttribute("href", profile.href);
 }
+
 
 
