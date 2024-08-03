@@ -102,10 +102,16 @@ aside {
     line-height: 1.5; /* Line height for better readability */
 
   }
-  .chart container {
+  .chart.container {
     display: flex; /* Use flexbox to align children side by side */
-    align-items: center; 
-    gap: 1rem; /* Optional: Add gap between the elements */
+    align-items: center; /* Align items vertically */ 
+    gap: 2rem;
+    justify-content: center;
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #fff; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
   footer {
