@@ -31,14 +31,14 @@ The project is organized as follows:
 
   | Feature        | Description                           |
   |----------------|---------------------------------------|
-  | Use arrays, objects to store and retrieve information| The forecast is stored in an array of objects and displayed on the Weather page| The Spotify Profile lets users login and retrieve data from Spotify music app. 
   | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party weather API and 3rd part music player to display profile information and/or play info|
   | Visualize data in a user friendly way | Relaxing images and color scheme, like candy for the eye. |
-  | Visually appealing UI      | Created a clean and modern UI with a color palette that is cohesive across the project. |
+  | Visually appealing UI | Created a clean and modern UI with a color palette that is cohesive across the project. |
   | Responsive Design | Each page uses media queries and flexbox to adapt the design for multiple screen sizes, and was developed using a mobile-first approach. |
+  |Use a regular expression to validate user input and either prevent the invalid input or inform the user about what happens with user input. |
 
 ## Getting Started
-1. Visit the Weather API webpage to retrieve your free API key: [Third-Party API](https://www.weatherapi.com)
+1. Visit the Spotify API webpage to retrieve your free API key:[Third-Party API] (https://developer.spotify.com/documentation/web-api/howtos/web-app-profile) and  
 2. Clone this repository to your local machine using Git:
 
 ```bash
