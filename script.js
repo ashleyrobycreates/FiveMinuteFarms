@@ -86,23 +86,23 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Username:", username);
         console.log("Password:", password);
 
-        // Example: Send login data to the server
-        // fetch('/login', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify({ username, password })
-        // })
-        // .then(response => response.json())
-        // .then(data => {
-        //     console.log('Success:', data);
-        //     // Handle successful login
-        // })
-        // .catch((error) => {
-        //     console.error('Error:', error);
-        //     // Handle login error
-        // });
+        // Send login data to the server
+        fetch('/login', {
+             method: 'POST',
+            headers: {
+                 'Content-Type': 'application/json'
+             },
+             body: JSON.stringify({ username, password })
+         })
+         .then(response => response.json())
+         .then(data => {
+             console.log('Success:', data);
+             // Handle successful login
+         })
+         .catch((error) => {
+             console.error('Error:', error);
+             // Handle login error
+         });
     });
 });
 function populateUI(profile) {
