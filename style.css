@@ -85,7 +85,7 @@ img {
     margin: 0 auto; /* Center the image horizontally */
 }
 .specific-img {
-    width: 80%; /* Set the desired width */
+    width: 50%; /* Set the desired width */
     height: auto; /* Maintain aspect ratio */
 }
 
