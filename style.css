@@ -16,35 +16,21 @@ body {
     height: 100%;
 }
 
-/* Style for the login form */
+/* Style for the username error*/
+#username-err {
+    color: hwb(0 5% 95%);
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: none;
+}
+/*Style for the form*/  
 #login-form {
-    max-width: 200px;
-    margin: 0 auto; /* Center the form horizontally */
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 1px;
-    background-color: hsl(316, 55%, 46%);
-    height: auto;
-
-}
-
-/* Style for the form labels */
-#login-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #333;
-}
-
-/* Style for the form inputs */
-#login-form input[type="text"],
-#login-form input[type="password"] {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    width: 50%;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: rgb(249, 5, 175);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 /* Style for the submit button */
@@ -58,11 +44,9 @@ body {
     font-size: 1rem;
     cursor: pointer;
 }
-
 #login-form button[type="submit"]:hover {
     background-color: #17a44a;
 }
-
 /* Header styles */
 h1 {
     text-align: center;
