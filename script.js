@@ -73,53 +73,6 @@ async function fetchProfile(token) {
 
     return await result.json();
 } 
-document.addEventListener("DOMContentLoaded", function() {
-    const loginForm = document.getElementById("login-form");
-
-    loginForm.addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
-
-        // Perform login logic here
-        console.log("Username:", username);
-        console.log("Password:", password);
-
-        // Send login data to the server
-        fetch('/login', {
-             method: 'POST',
-            headers: {
-                 'Content-Type': 'application/json'
-             },
-             body: JSON.stringify({ username, password })
-         })
-         .then(response => response.json())
-         .then(data => {
-             console.log('Success:', data);
-             // Handle successful login
-         })
-         .catch((error) => {
-             console.error('Error:', error);
-             // Handle login error
-         });
-    });
-});
-function populateUI(profile) {
-    document.getElementById("displayName").innerText = profile.display_name;
-    if (profile.images[0]) {
-        const profileImage = new Image(200, 200);
-        profileImage.src = profile.images[0].url;
-        document.getElementById("avatar").appendChild(profileImage);
-        document.getElementById("imgUrl").innerText = profile.images[0].url;
-    }
-    document.getElementById("id").innerText = profile.id;
-    document.getElementById("email").innerText = profile.email;
-    document.getElementById("uri").innerText = profile.uri;
-    document.getElementById("uri").setAttribute("href", profile.external_urls.spotify);
-    document.getElementById("url").innerText = profile.href;
-    document.getElementById("url").setAttribute("href", profile.href);
-}
 
 
 
