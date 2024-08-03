@@ -1,0 +1,15 @@
+{
+  "name": "fiveminutefarms",
+  "version": "1.0.0",
+  "description": "This is my capstone project for CODE:You. The project utilizes a third-party api to retrieve information, that is then presented to the user with a helpful interface. \r The user is able to interact with the information provided by searching for available options. \r The goal of the project is to demonstrate a general knowledge of HTML, CSS, and JavaScript.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
