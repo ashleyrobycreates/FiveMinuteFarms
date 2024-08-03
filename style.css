@@ -24,7 +24,7 @@ h1 {
 /*Style for the form*/  
 #login-form {
     width: 100%;
-    justify-items: center;
+    max-width: 500px;
     margin: 5rem auto;
     padding: 2rem;
     background-color: rgb(249, 5, 175);
@@ -102,17 +102,17 @@ aside {
     line-height: 1.5; /* Line height for better readability */
 
   }
-  .chart.container {
-    display: flex; /* Use flexbox to align children side by side */
-    align-items: center; /* Align items vertically */ 
-    gap: 2rem;
-    justify-content: center;
-    padding: 20px; /* Add some padding for spacing */
-    background-color: #fff; /* Background color */
-    border: 1px solid #ccc; /* Border */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+header {
+    font-size: medium;
+    align-items: stretch;
+    margin: 1rem;
+    padding: 1rem;
+    color: #171716;
+    background-color: pink;
+    border: 2px solid #3804f4;
+    border-radius: 8px;
 }
+
 
   footer {
     font-style: italic;
