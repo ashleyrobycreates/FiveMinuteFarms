@@ -126,7 +126,7 @@ aside {
   }
   .chart container {
     display: flex; /* Use flexbox to align children side by side */
-    align-items: center; /* Optional: Align items vertically center */
+    align-items: center; 
     gap: 1rem; /* Optional: Add gap between the elements */
 }
 
@@ -183,4 +183,10 @@ aside {
         font-size: 1rem; /* Adjust font size for smaller screens */
         color: #1db954; /* Keep the same color */
     }
+}
+/*Growing chart*/
+canvas#myChart {
+    width: 100%;
+    height: 100%;
+    
 }
