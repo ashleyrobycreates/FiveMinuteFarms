@@ -5,24 +5,7 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: green;
 }
-
-body {
-    background-image: url('img/flowers.jpg');
-    background-size: cover; /* Ensures the image covers the entire viewport */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: green;
-    height: 100%;
-
-html { 
-    justify-content: center;
-    font-size: small;
-    font-style: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: green;
-}
-
+/* Body styles */
 body {
     background-image: url('img/flowers.jpg');
     background-size: cover; /* Ensures the image covers the entire viewport */
@@ -33,7 +16,55 @@ body {
     height: 100%;
 }
 
+/* Style for the login form */
+#login-form {
+    max-width: 200px;
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    background-color: hsl(316, 55%, 46%);
+    height: auto;
+
 }
+
+/* Style for the form labels */
+#login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for the form inputs */
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for the submit button */
+#login-form button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #1db954;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#login-form button[type="submit"]:hover {
+    background-color: #17a44a;
+}
+
+
+/* Header styles */
 h1 {
     text-align: center;
     font-size: extra-large;
