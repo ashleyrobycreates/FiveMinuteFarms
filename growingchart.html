@@ -18,8 +18,8 @@
 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
 <script>
-const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-const yValues = [55, 49, 44, 24, 15];
+const xValues = ["Planted Seed", "Sprouting Seed", "Visable Sprout", "Green Shoot", "Ready to Plant"];
+const yValues = [1, 5, 10, 15, 20];
 const barColors = ["red", "green","blue","orange","brown"];
 
 new Chart("myChart", {
@@ -35,7 +35,7 @@ new Chart("myChart", {
     legend: {display: false},
     title: {
       display: true,
-      text: "World Wine Production 2018"
+      text: "Growth Rate of Seedlings in Days"
     }
   }
 });
