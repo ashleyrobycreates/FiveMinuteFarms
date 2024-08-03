@@ -85,12 +85,12 @@ img {
     margin: 0 auto; /* Center the image horizontally */
 }
 .specific-img {
-    width: 50%; /* Set the desired width */
+    width: 90%; /* Set the desired width */
     height: auto; /* Maintain aspect ratio */
 }
 
 aside {
-    width: 95%;
+    width: 75%;
     padding: 1rem;
     margin: 1rem;
     box-shadow: 5px 5px 5px #888;
@@ -104,7 +104,6 @@ aside {
   }
 header {
     font-size: medium;
-    align-items: stretch;
     margin: 1rem;
     padding: 1rem;
     color: #171716;
@@ -112,8 +111,6 @@ header {
     border: 2px solid #3804f4;
     border-radius: 8px;
 }
-
-
   footer {
     font-style: italic;
     font-size: small;
@@ -178,6 +175,4 @@ canvas#myChart {
     justify-items: auto;
     margin: 5rem auto;
     padding: 2rem;
-    
-    
 }

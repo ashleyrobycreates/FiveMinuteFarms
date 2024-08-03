@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 password: password.value
             };
 
-            fetch('http://127.0.0.1:5500/login', {
+            fetch('http://127.0.0.1:5500/FiveMinuteFarms/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
