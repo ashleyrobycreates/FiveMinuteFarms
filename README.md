@@ -8,13 +8,14 @@ The goal of the project is to demonstrate a general knowledge of HTML, CSS, and 
 
 ## Resources
 The resources I used for this project are as follows:
-- [Third-Party API](https://www.weatherapi.com)
-    - This provides the weather information seen on the weather forecast page.
-- [Third-Party API] (https://.spotify.com/;
-- [Third-Party API] (https://developer.spotify.com/documentation/web-api/howtos/web-app-profile)
-   - This provides the music to be played for the growing garden via a Spotify Profile on the web app.
+- [Third-Party API](https://developer.spotify.com/documentation/web-api)
+   - This provides the user the ability to login to their own Spotify Profile.
    [Research] (www.growoya.com)
-   -This website provides planting info according to the users zone based in the U.S.A.
+   -This website provides planting info according to the users zone based on location in the United States.
+   [Research] Chart.js (w3schools.com)
+   - Growing Chart, based on my own research as a gardener for over five years.
+
+
 
 ### Project Overview
 ---
@@ -23,21 +24,23 @@ The project is organized as follows:
 
 - **Landing Page:** The landing page provides the user with options to navigate the web application, log in and gives an overview of what to expect.
 
-//- **Weather Forecast:** Using the third-party weather api the weather forecast page allows users to search for local weather. 
+**Spotify Profile API Music Player:** Using the third-party API allows users to link their Spotify profile directly onto the web app page, and consequently play music from their own library for themselves, and for the healthy growth of their seedlings and garden.
 
-**Spotify Profile API and Music Player:** Using the third-party music api allows users to search for various music and sounds to play for their garden from their Spotify profile located on the web app page. "When the page loads, we'll check if there is a code in the callback query string. If we don't have a code, we'll redirect the user to the Spotify authorization page. Once the user authorizes the application, Spotify will redirect the user back to our application, and we'll read the code from the query string... use the code to request an access token from the Spotify token API. Then, use the access token to call the Web API to get the user's profile data and populate the user interface with the user's profile data." -Spotify
+**Garden Chart:** Growing chart in days based on seedlings, made based on my own research of over five years.
 
 **Garden Images:** Images have been added that show the various stages of planting and growing. 
+
 
 ## Features Utilized for the project
 
   | Feature        | Description                           |
   |----------------|---------------------------------------|
-  | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party Spotify music player to display profile information |
+  | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party Spotify API to display users profile and music information |
   | Visualize data in a user friendly way | Relaxing images and color scheme, like candy for the eye. |
   | Visually appealing UI | Created a clean and modern UI with a color palette that is cohesive across the project. |
   | Responsive Design | Each page uses media queries and flexbox to adapt the design for multiple screen sizes, and was developed using a mobile-first approach. |
-  |Use a regular expression to validate user input and either prevent the invalid input or inform the user about what happens with user input. |
+  |Use of a regular expression to validate user input and either prevent the invalid input or inform the user about what happens with user input. |
+  |Visualize data in a user friendly way by using a growing chart. |
 
 ## Getting Started
 1. Visit the Spotify API webpage to retrieve your free API key:[Third-Party API] (https://developer.spotify.com/documentation/web-api/howtos/web-app-profile) and  
