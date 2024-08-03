@@ -4,7 +4,7 @@ The user is able to interact with the information provided by searching for avai
 The goal of the project is to demonstrate a general knowledge of HTML, CSS, and JavaScript.
 
 ## Overview
- Hello! Welcome to Five Minute Farms! This website was made to advise anyone, in basic steps, how to grow an easy, small farm. //A weather app is included for checking local weather.// Also, according to my own research and web based research, plants DO respond to music and sounds! For this reason, a Spotify profile media player is included for users to login and play music/soundwaves to help their garden grow healthier and happier. Happy plants = happy harvest!
+ Hello! Welcome to Five Minute Farms! This website was made to advise anyone, in basic steps, how to grow an easy, small farm. According to my own research and web based research, plants DO respond to music and sounds! For this reason, a Spotify profile media player is included for users to login and play music/soundwaves to help their garden grow healthier and happier. A growth chart is provided to show in days approximately how long it takes to grow from a seedling to "ready to plant" status. Finally, an images page shows various stages of seedlings and gardens. Happy plants = happy harvest!
 
 ## Resources
 The resources I used for this project are as follows:
