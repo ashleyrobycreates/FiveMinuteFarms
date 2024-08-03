@@ -1,3 +1,4 @@
+//Spotify API
 
 const clientId = "daafaef84f6645a58fa7a92405cf7bbc"; // Replace with your client ID or "your_client_id"
 const params = new URLSearchParams(window.location.search);
@@ -21,7 +22,7 @@ export async function redirectToAuthCodeFlow(clientId) {
     const params = new URLSearchParams();
     params.append("client_id", clientId);
     params.append("response_type", "code");
-    params.append("redirect_uri", "http://localhost:5500/spotify.html");// Add your redirect URI
+    params.append("redirect_uri", "http://localhost:5500/FiveMinuteFarms/spotify.html");// Add your redirect URI
     params.append("scope", "user-read-private user-read-email");
     params.append("code_challenge_method", "S256");
     params.append("code_challenge", challenge);
@@ -54,7 +55,7 @@ export async function getAccessToken(clientId, code) {
     params.append("client_id", clientId);
     params.append("grant_type", "authorization_code");
     params.append("code", code);
-    params.append("redirect_uri", "http://localhost:5500/spotify.html");// Add your redirect URI
+    params.append("redirect_uri", "http://localhost:5500/FiveMinuteFarms/spotify.html");// Add your redirect URI
     params.append("code_verifier", verifier);
 
     const result = await fetch("https://accounts.spotify.com/api/token", {
@@ -73,7 +74,6 @@ async function fetchProfile(token) {
 
     return await result.json();
 } 
-//Login
 //Login form
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('login-form');
