@@ -73,7 +73,7 @@ async function fetchProfile(token) {
 
     return await result.json();
 } 
-//login form
+//Login form
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('login-form');
     const username = document.getElementById('username');
@@ -105,36 +105,32 @@ document.addEventListener('DOMContentLoaded', function() {
         if (valid) {
             // Perform login action (e.g., send data to server)
             console.log('Form submitted');
-            // You can use fetch data to the server here
+            // Example of sending data to a server using fetch
+            const loginData = {
+                username: username.value,
+                password: password.value
+            };
+
+            fetch('http://127.0.0.1:5500/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(loginData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Redirect to another page or show success message
+                    window.location.href = 'dashboard.html';
+                } else {
+                    // Show error message
+                    alert('Login failed: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
         }
     });
 });
-// Sending data to a server using fetch
-const loginData = {
-    username: username.value,
-    password: password.value
-};
-
-fetch('http://127.0.0.1:5500/login', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(loginData)
-})
-.then(response => response.json())
-.then(data => {
-    if (data.success) {
-        {
-            // Handle successful login
-        } else {
-            // Handle login failure
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-
-
-
-
