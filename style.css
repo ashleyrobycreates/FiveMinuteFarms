@@ -21,16 +21,7 @@ h1 {
     font-size: extra-large;
     color: rgb(240, 246, 240);
 }
-/*Style for the form*/  
-#login-form {
-    width: 100%;
-    max-width: 500px;
-    margin: 5rem auto;
-    padding: 2rem;
-    background-color: rgb(249, 5, 175);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
+/*Top of page grid*/
 .container {  
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
