@@ -167,6 +167,7 @@ canvas#myChart {
     margin: 5rem auto;
     padding: 2rem;
 }
+/* Form sign in sing up styles */
 .form-box {
     width: 90%;
     max-width: 450px;
@@ -178,5 +179,25 @@ canvas#myChart {
     padding: 50px 60px 70px;
     text-align: center;
     border-radius: 8px; /* Rounded corners */
+
+}
+.form-box h1 {
+    margin-bottom: 60px;
+    color: #8b089f;
+    font-size: 30px;
+    position: relative;
+}
+.form-box h1::after {
+content: '';
+width: 30px;
+height: 4px;
+border-radius: 3px;
+background: #8b089f;
+position: absolute;
+bottom: -12px;
+left: 50%;
+transform: translateX(-50%);
+
+
 
 }
