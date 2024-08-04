@@ -177,5 +177,6 @@ canvas#myChart {
     background: #fff ;
     padding: 50px 60px 70px;
     text-align: center;
+    border-radius: 8px; /* Rounded corners */
 
 }
