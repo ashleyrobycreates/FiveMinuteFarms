@@ -9,8 +9,8 @@ html {
 body {
     background-image: url('img/flowers.jpg');
     background-size: cover; /* Ensures the image covers the entire viewport */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: green;
     height: 100%;
@@ -19,7 +19,8 @@ body {
 h1 {
     text-align: center;
     font-size: extra-large;
-    color: rgb(240, 246, 240);
+    font-weight: bold;
+    color: rgb(3, 164, 14);
 }
 /*Top of page grid*/
 .container {  
