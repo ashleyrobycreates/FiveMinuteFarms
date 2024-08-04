@@ -24,38 +24,41 @@ h1 {
 /*Top of page grid*/
 .container {  
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 4 columns of equal width */
-    grid-template-rows: auto; /* Rows based on content */
-    gap: 5px; /* Gap between grid items */
+    grid-template-columns: repeat(5, 1fr); /* 5 columns of equal width */
+    gap: 2px; /* Gap between grid items */
     background-color: pink;
-    border: 5px solid hsl(327, 97%, 49%);
-    padding: 10px;
+    border: 2px solid hsl(327, 97%, 49%);
+    padding: 5px;
 }
+/* Grid item styles */
 .container > div {
     background-color: white;
     padding: 20px;
     border: 1px solid #ccc;
     text-align: center;
-}
+} 
+/* Image container styles */
 .container img {
     flex: 1 1 calc(25% - 20px); /* 5 items  */
     max-width: 100%;
     height: auto;
     border: 1px solid #ccc;
     box-sizing: border-box;
-}
+} 
+/* Navigation bar styles */
 h2 { 
     justify-content: center;
     font-size: medium;
     color:rgb(138, 43, 226)
     background-color: pink;
 }
+/* Navigation bar styles */
 .cards {
     margin: 10px; auto; /* Center the cards */
-    padding: 20px;
-    text-align:center;
-    justify-items: center;
-    width: 90%;
+    padding: 20px; /* Add space around the cards */
+    text-align:center; /* Center the text */
+    justify-items: center; /* Center the cards */
+    width: 90%; 
     height: auto;
 
 }
@@ -64,7 +67,7 @@ h2 {
     padding: 5px;
     text-align: center;
     background-color: pink;
-    width: 75%; /* Optional: Set a width to control the size */
+    width: 75%;
 }
 
 img {
@@ -167,13 +170,13 @@ canvas#myChart {
     margin: 5rem auto;
     padding: 2rem;
 }
-/* Form sign in sing up styles */
+/* Form sign in sign up styles */
 .form-box {
     width: 90%;
     max-width: 450px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: absolute; /* Position the form */
+    top: 50%; /* Position from the top */
+    left: 50%; /* Position from the left */
     transform: translate(-50%, -50%);
     background: #fff ;
     padding: 50px 60px 70px;
@@ -200,4 +203,37 @@ input {
     border:0;
     outline: 0;
     padding: 10px 5px;
+}
+.input-field i {
+    padding: 10px;
+    background: #1ff822;
+    color: #8b089f;
+    min-width: 50px;
+    text-align: center;
+}
+form p {
+    text-align: left;
+    color: #8b089f;
+    font-size: 12px;
+    margin: 10px 0;
+}
+form p a {
+    color: #8b089f;
+}
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn-field button {
+    height: 40px;
+    flex-basis: 48%;
+    background: #8b089f;
+    border-radius: 20px;
+    border: 0;
+    color: #fff
+    cursor: pointer;
+    transition: background 1s;
+
 }
