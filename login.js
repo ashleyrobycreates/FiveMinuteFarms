@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const password = document.getElementById('password');
     const messageContainer = document.createElement('div');
     messageContainer.id = 'message-container';
-    form.appendChild(messageContainer);
 
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the form from submitting the traditional way
