@@ -46,19 +46,19 @@ h1 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 } 
-/* Navigation bar styles */
+
 h2 { 
     justify-content: center;
     font-size: medium;
     color:rgb(138, 43, 226)
     background-color: pink;
 }
-/* Navigation bar styles */
+
 .cards {
     margin: 10px; auto; /* Center the cards */
-    padding: 20px; /* Add space around the cards */
-    text-align:center; /* Center the text */
-    justify-items: center; /* Center the cards */
+    padding: 20px; 
+    text-align:center; 
+    justify-items: center; 
     width: 90%; 
     height: auto;
 
@@ -71,17 +71,11 @@ h2 {
     width: 75%;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 5px 5px 5px #888;
-    display: block; /* Make the image a block element */
-    margin: 0 auto; /* Center the image horizontally */
-}
+
 .specific-img {
-    width: 90%; /* Set the desired width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    border-radius: 8px; /* Rounded corners */
+   
 }
 
 aside {
@@ -103,19 +97,19 @@ header {
     padding: 1rem;
     color: #171716;
     background-color: pink;
-    border: 2px solid #3804f4;
+    border: 2px solid hsl(330, 97%, 49%);
     border-radius: 8px;
+
 }
   footer {
     font-style: italic;
     font-size: small;
     color:black;
     text-align: center;
-    background-color: pink;
-    border: 5px solid #3804f4;
+    background-color: rgb(247, 6, 162);
+    border: 5px solid #0c0b00;
   }
-
- /* Spotify Profile section styles */
+/* Spotify Profile section styles */
 #profile {
     width: 50%;
     margin: 2rem auto;
