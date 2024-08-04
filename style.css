@@ -24,7 +24,7 @@ h1 {
 /*Top of page grid*/
 .container {  
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
+    grid-template-columns: repeat(5, 1fr); /* 4 columns of equal width */
     grid-template-rows: auto; /* Rows based on content */
     gap: 5px; /* Gap between grid items */
     background-color: pink;
@@ -38,7 +38,7 @@ h1 {
     text-align: center;
 }
 .container img {
-    flex: 1 1 calc(25% - 20px); /* 4 items  */
+    flex: 1 1 calc(25% - 20px); /* 5 items  */
     max-width: 100%;
     height: auto;
     border: 1px solid #ccc;
@@ -177,7 +177,5 @@ canvas#myChart {
     background: #fff ;
     padding: 50px 60px 70px;
     text-align: center;
-    
-
 
 }
