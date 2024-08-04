@@ -182,22 +182,22 @@ canvas#myChart {
 
 }
 .form-box h1 {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     color: #8b089f;
     font-size: 30px;
     position: relative;
 }
-.form-box h1::after {
-content: '';
-width: 30px;
-height: 4px;
-border-radius: 3px;
-background: #8b089f;
-position: absolute;
-bottom: -12px;
-left: 50%;
-transform: translateX(-50%);
-
-
-
+.input-field {
+    background: #1ff822;
+    margin: 2px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+input {
+    width: 100%;
+    background: transparent;
+    border:0;
+    outline: 0;
+    padding: 10px 5px;
 }
