@@ -19,10 +19,10 @@
 
     <div class="container">
         <div class="form-box">
-            <h1>Sign Up</h1>
+            <h1 id="title">Sign Up</h1>
             <form>
                 <div class="input-group">
-                    <div class="input-field">
+                    <div class="input-field" id="nameField">
                         <i class="fa-solid fa-user"></i>
                         <input type="text" placeholder="Name">
                     </div>
@@ -38,13 +38,30 @@
                     <p>Lost your password? <a href="#">Click Here!</a></p>
                 </div>
                 <div class="btn-field">
-                    <button type="button">Sign Up</button>
-                    <button type="button" class="disable">Sign In</button>
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign In</button>
                 </div>   
             </form>
         </div>
 
 </div>
+
+<script>
+
+let signupBtn = document.getElementById("signupBtn");
+let signinBtn = document.getElementById("signinBtn");
+let nameField = document.getElementById("nameField");
+let title = document.getElementById("title")
+
+
+singinBtn.onclick = function(){
+    nameField.style.maxHeight = "0";
+
+
+}
+
+
+</script>
 
 </body>
 </html>
