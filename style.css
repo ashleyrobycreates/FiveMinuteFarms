@@ -72,25 +72,25 @@ h2 {
 }
 
 .specific-img {
-    width: 75%;
+    width: 90%;
+    display: block;
     align-self: center;
     padding: 1rem;
-    margin: auto;
     border-radius: 8px; /* Rounded corners */
+    margin: auto;
    
 }
 
 aside {
-    width: 75%;
+    width: 100%;
+    display: block;
     padding: 1rem;
-    margin: 1rem;
+    margin: auto
     box-shadow: 5px 5px 5px #888;
     color: #171716;
     background-color: rgb(159, 159, 242);
     border-radius: 8px; /* Rounded corners */
-    border: 1px solid #ccc; /* Light border */
     font-family: Arial, sans-serif; /* Font style */
-    line-height: 1.5; /* Line height for better readability */
 
   }
 header {
