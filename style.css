@@ -71,9 +71,11 @@ h2 {
     width: 75%;
 }
 
-
 .specific-img {
-    width: 100%; 
+    width: 75%;
+    align-self: center;
+    padding: 1rem;
+    margin: auto;
     border-radius: 8px; /* Rounded corners */
    
 }
