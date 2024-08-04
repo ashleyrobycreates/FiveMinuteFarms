@@ -15,9 +15,10 @@
         <div><a href="growingchart.html">Growing Chart</a></div>
         <div><a href="gardenimages.html">Garden Images</a></div>
     </nav>
-   
-    <h1>Welcome to Five Minute Farms!</h1>
-    <header>
+    <div class="header">
+        <h1>Welcome to Five Minute Farms!</h1>
+      </div>  
+      <div class="form">
         <form action="action_page.php" method="post">
             <div class="container">
               <label for="uname"><b>Username</b></label>
@@ -31,17 +32,15 @@
                 <input type="checkbox" checked="checked" name="remember"> Remember me
               </label>
             </div>
-          
-            <div class="container" style="background-color:#f1f1f1">
               <button type="button" class="cancelbtn">Cancel</button>
               <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
           </form>
           
-        <form action="action_page.php" style="border:1px solid #ccc">
+        <form action="action_page.php">
           <div class="container">
             <h1>Sign Up</h1>
-            <p>Please fill in this form to create an account.</p>
+            <p>Create an account here:</p>
         
             <label for="email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" required>
@@ -53,15 +52,15 @@
             <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
         
             <label>
-              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
-            
+
               <button type="button" class="cancelbtn">Cancel</button>
               <button type="submit" class="signupbtn">Sign Up</button>
             </div>
           </div>
         </form>
-    </header>
+    </div>
     <div class="cards">
     <div class="card">
     <p>Hello! I will show you how <strong>easy</strong> it is to grow your own veggies no matter what space you reside in.
