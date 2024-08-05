@@ -27,7 +27,17 @@ input {
     padding: 8px;
     box-sizing: border-box;
     margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #fff;
+    border-radius: 10px;
+    border: 1px solid white;
     margin-top: 20px;
+}
+button {
+    background: #bd0692;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 15px;
 }
