@@ -58,17 +58,17 @@ button:hover {
     display: none;
 }
 #hourly-forecast {
+    display: flex;
     margin-top: 50px;
     overflow-x: auto;
     white-space: nowrap;
-    display: flex;
     justify-content: space-between;  
 }
 .hourly-item {
    flex: 0 0 auto;
    width: 88px;
-   display: flex;
    flex-direction: column;
+   display: flex;
    align-items: center;
    margin-right: 10px;
    color: white;
