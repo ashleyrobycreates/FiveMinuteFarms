@@ -14,11 +14,10 @@ function fetchWeatherData(location){
     })
 }
 
-navigator.geolocation.getCurrentPosition(position) => {
+navigator.geolocation.getCurrentPosition(position => {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    const location = '$(latitude),$(longitude)';
-    
+    const location = '$(latitude), $(longitude)';
     fetchWeatherData(location);
 }, error => {
     console.log('Error-getting-location', error);
