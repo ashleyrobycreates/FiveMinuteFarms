@@ -1,6 +1,6 @@
 function getWeather() {
     
-    const apiKey = 'b595194f3f37ce111269ec99d5026638';
+    const apiKey = 'YOUR_API_KEY';//put in your own api key, make file
     const city = document.getElementById('city').value; 
 
     if (!city) {
@@ -64,7 +64,7 @@ function displayWeather(data) {
         const temperature = Math.round(data.main.temp - 273.15);
         const description = data.weather[0].description;
         const iconCode = data.weather[0].icon;
-        const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@4x.png`;
+        const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@4.png`;//not working
     
         const temperatureHTML = '
             <p>${temperature}°C</p>
@@ -94,7 +94,7 @@ function displayHourlyForecast(hourlyData) {
             const hour = dateTime.getHours();
             const temperature = Math.round(item.main.temp - 273.15);
             const iconCode = item.weather[0].icon;
-            const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
+            const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;//not working/diff website
 
             const hourlyItemHtml = '
             <div class="hourly-item">
