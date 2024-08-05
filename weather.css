@@ -65,11 +65,20 @@ button:hover {
     justify-content: space-between;  
 }
 .hourly-item {
-   flex: 0 0 auto;
+   flex: 0 0 auto; /* Prevent items from shrinking */
    width: 88px;
-   flex-direction: column;
-   display: flex;
-   align-items: center;
+   flex-direction: column; /* Align icon and temp vertically */
+   display: flex; /* Align icon and temp horizontally */
+   align-items: center; /* Center icon and temp */
    margin-right: 10px;
    color: white;
+}
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px; /* Space between icon and temp */
+}
+#hourly-heading {
+    margin-top: 10px;
+    color: white;
 }
