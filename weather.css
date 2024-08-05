@@ -7,15 +7,14 @@ justify-content: center;
 height: 100vh;
 margin: 0;
 }
-
 #weather-container {
 background: rgba(255, 255, 255, 0.3);
 max-width: 400px;
-padding 20px;
+padding: 20px;
 border-radius: 15px;
-box-shadow: 0 8px 32px rgba (0, 0, 0, 0.1);
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(10px);
-border: 1px solid rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(247, 242, 242, 0.1);
 text-align: center;
 }
 h2, label, p {
@@ -32,7 +31,7 @@ input {
     margin-top: 20px;
 }
 button {
-    background: #bd0692;
+    background: #1d06ee;
     color: white;
     padding: 10px;
     border: none;
@@ -42,7 +41,7 @@ button {
     font-size: 15px;
 }
 button:hover {
-    background: #9e0675;
+    background: #f502b4;
 }
 #temp-div p {
     font-size: 60px;
