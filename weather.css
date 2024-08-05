@@ -1,3 +1,10 @@
+.home-container {
+	background-color: pink;
+    border: 2px solid hsl(327, 97%, 49%);
+    padding: 5px;
+	border-radius: 8px;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
 
 :root {
