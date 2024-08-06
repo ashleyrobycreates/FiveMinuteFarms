@@ -11,7 +11,7 @@ The resources I used for this project are as follows:
 - [Third-Party API](https://developer.spotify.com/documentation/web-api)
    - This provides the user the ability to login to their own Spotify Profile.
   [Third-Party API] (www.weatherapi.com)
-  - This provides the user up-to-date weather based on their location.
+  - This provides the user up-to-date weather based on their location as well as weather icons.
   [Research] (www.growoya.com)
    -This website provides planting info according to the users zone based on location in the United States.
   [Research] Chart.js (w3schools.com)
