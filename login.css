@@ -94,3 +94,7 @@ body {
     background: #ccc;
     color: #555;
 }
+-webkit-hyphens: auto;
+                  hyphens: auto;
+                  word-wrap: break-word;
+                  overflow-wrap: anywhere;
