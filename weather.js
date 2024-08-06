@@ -5,8 +5,8 @@ const getDayName = (dayType, dateVal = dateObj) => dateVal.
 toLocaleDateString('en-US', {weekday: dayType });
 
 function fetchWeatherData(location){
-    const apiUrl = 'https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodeURIComponent(location)}&days=5';
-
+    const apiUrl = 'https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&5days';
+    
     fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
