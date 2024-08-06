@@ -10,10 +10,13 @@ The goal of the project is to demonstrate a general knowledge of HTML, CSS, and 
 The resources I used for this project are as follows:
 - [Third-Party API](https://developer.spotify.com/documentation/web-api)
    - This provides the user the ability to login to their own Spotify Profile.
+  [Third-Party API] (www.weatherapi.com)
+  - This provides the user up-to-date weather based on their location.
   [Research] (www.growoya.com)
    -This website provides planting info according to the users zone based on location in the United States.
   [Research] Chart.js (w3schools.com)
    - Growing Chart, based on my own research as a gardener for over five years.
+  [Research] 
    
 
 ### Project Overview
@@ -22,6 +25,10 @@ The resources I used for this project are as follows:
 The project is organized as follows:
 
 - **Landing Page:** The landing page provides the user with options to navigate the web application, log in and gives an overview of what to expect.
+
+**Sign Up Sign In** The user can sign up or sign in if they want to.
+
+**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs.
 
 **Spotify Profile API Music Player:** Using the third-party API allows users to link their Spotify profile directly onto the web app page, and consequently play music from their own library for themselves, and for the healthy growth of their seedlings and garden.
 
