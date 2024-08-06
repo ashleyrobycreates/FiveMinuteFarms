@@ -28,9 +28,9 @@ The project is organized as follows:
 
 **Sign Up Sign In** The user can sign up or sign in if they want to.
 
-**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs.
+**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. (Please see **Note at bottom concerning API KEYS)
 
-**Spotify Profile API Music Player:** Using the third-party API allows users to link their Spotify profile directly onto the web app page, and consequently play music from their own library for themselves, and for the healthy growth of their seedlings and garden.
+**Spotify Profile API Music Player:** Using the third-party API allows users to link their Spotify profile directly onto the web app page, and consequently play music from their own library for themselves, and for the healthy growth of their seedlings and garden. (Please see **Note at bottom concerning API KEYS)
 
 **Garden Chart:** Growing chart in days based on seedlings, made based on my own research of over five years.
 
@@ -71,7 +71,7 @@ npm install
 6. Use the live server VsCode extension to view the Index.html page
 
 
-
+**Note: This was created with the .env to keep my API KEY safe. However, after I coded all of this, I realized I was using vanilla.js and in the future would need to incorporate use of Express or React to hide my API KEY as I kept getting an error. I understand that I do NOT want to hardcode my API KEY. Thank you!**
 
 
 
