@@ -1,5 +1,5 @@
 //Spotify API login
-const clientId = "APIKEY"; // Replace with your APIKEY
+const clientId = "SPOTIFY_API_KEY";
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
 
