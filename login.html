@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <script src="https://kit.fontawesome.com/e53a5206c8.js" crossorigin="anonymous"></script>
-    <title>Sign In and Sign Up</title>
+    <link rel="icon" href="/Img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/login.css">
+    <title>Login</title>
+    
 </head>
 <body>
     <nav class="container">  
@@ -16,63 +17,40 @@
         <div><a href="/growingchart.html">Growing Chart</a></div>
         <div><a href="/gardenimages.html">Garden Images</a></div>
     </nav>
-    </nav>
-
-    <div class="container">
-        <div class="form-box">
-            <h1 id="title">Sign Up</h1>
-            <form>
-                <div class="input-group">
-                    <div class="input-field" id="nameField">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Name">
-                    </div>
-                    <div class="input-field">
-                        <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Email">
-                    </div>
-
-                    <div class="input-field">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Password">
-                    </div>    
-                    <p>Lost your password? <a href="#">Click Here!</a></p>
-                </div>
-                <div class="btn-field">
-                    <button type="button" id="signupBtn">Sign Up</button>
-                    <button type="button" id="signinBtn" class="disable">Sign In</button>
-                </div>   
-            </form>
+    <div class="login-container">
+    <div id="title">Sign In</div>
+    <form id="login-form">
+        <div id="nameField" style="max-height: 0;">
+            <input type="text" id="name" placeholder="Name">
         </div>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button type="submit">Submit</button>
+    </form>
+    <button id="signinBtn">Sign In</button>
+    <button id="signupBtn">Sign Up</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let title = document.getElementById("title");
+            let signinBtn = document.getElementById("signinBtn");
+            let signupBtn = document.getElementById("signupBtn");
+            let nameField = document.getElementById("nameField");
 
-</div>
+            signinBtn.onclick = function() {
+                nameField.style.maxHeight = "0";
+                title.innerHTML = "Sign In";
+                signupBtn.classList.add("disable");
+                signinBtn.classList.remove("disable");
+            }
 
-<script>
+            signupBtn.onclick = function() {
+                nameField.style.maxHeight = "60px";
+                title.innerHTML = "Sign Up";
+                signupBtn.classList.remove("disable");
+                signinBtn.classList.add("disable");
+            }
 
-let signupBtn = document.getElementById("signupBtn");
-let signinBtn = document.getElementById("signinBtn");
-let nameField = document.getElementById("nameField");
-let title = document.getElementById("title")
-
-
-signinBtn.onclick = function(){
-    nameField.style.maxHeight = "0";
-    title.innerHTML = "Sign In";
-    signupBtn.classList.add("disable");
-    signinBtn.classList.remove("disable");
-
-}
-
-signupBtn.onclick = function(){
-    nameField.style.maxHeight = "60px";
-    title.innerHTML = "Sign Up";
-    signupBtn.classList.remove("disable");
-    signinBtn.classList.add("disable");
-
-}
-
-//form submission and validation
-document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('login-form');
             const name = document.getElementById('name');
             const username = document.getElementById('username');
@@ -82,33 +60,38 @@ document.addEventListener('DOMContentLoaded', function() {
             const passwordErr = document.getElementById('password-err');
 
             form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the form from submitting the traditional way
+                event.preventDefault(); // Prevent the form from submitting the traditional way
 
-        // Reset error messages
-        usernameErr.style.display = 'none';
-        passwordErr.style.display = 'none';
+                // Reset error messages
+                if (nameErr) nameErr.style.display = 'none';
+                if (usernameErr) usernameErr.style.display = 'none';
+                if (passwordErr) passwordErr.style.display = 'none';
 
-        let valid = true;
+                let valid = true;
 
-           // Validate username
-           if (username.value.trim() === '') {
-            usernameErr.style.display = 'block';
-            valid = false;
-        }
+                // Validate username
+                if (username.value.trim() === '') {
+                    if (usernameErr) usernameErr.style.display = 'block';
+                    valid = false;
+                }
 
-        // Validate password
-        if (password.value.trim() === '') {
-            passwordErr.style.display = 'block';
-            valid = false;
-        }
-        if (valid) {
-            // Perform login action (e.g., send data to server)
-            console.log('Form submitted');
-            // You can use fetch or XMLHttpRequest to send data to the server here
-        }
-    });
-});
+                // Validate password
+                if (password.value.trim() === '') {
+                    if (passwordErr) passwordErr.style.display = 'block';
+                    valid = false;
+                }
 
-</script>
+                // Validate name if visible
+                if (nameField.style.maxHeight !== "0" && name.value.trim() === '') {
+                    if (nameErr) nameErr.style.display = 'block';
+                    valid = false;
+                }
+
+                if (valid) {
+                    // Submit the form or perform further actions
+                }
+            });
+        });
+    </script>
 </body>
 </html>

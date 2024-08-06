@@ -1,0 +1,65 @@
+/* Form sign in sign up styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #c552d6;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.login-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns of equal width */
+    gap: 5px; /* Gap between grid items */
+    background-color: pink;
+    border: 2px solid hsl(327, 97%, 49%);
+    padding: 5px;
+    width: 100%; /* Full width */
+    max-width: 450px;
+    background: #fff ;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border:0;
+    outline: 0;
+    padding: 10px 5px;
+}
+.input-field {
+    padding: 10px;
+    background: #1ff822;
+    color: #8b089f;
+    min-width: 50px;
+    text-align: center;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn-field button {
+    height: 40px;
+    flex-basis: 48%;
+    background: #8b089f;
+    border-radius: 20px;
+    border: 0;
+    color: #fff
+    cursor: pointer;
+    font-size: 18px;
+
+}
+.btn-field button.disable {
+    background: #ccc;
+    color: #555;
+}
