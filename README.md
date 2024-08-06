@@ -16,8 +16,8 @@ The resources I used for this project are as follows:
    -This website provides planting info according to the users zone based on location in the United States.
   [Research] Chart.js (w3schools.com)
    - Growing Chart, based on my own research as a gardener for over five years.
-  [Research] 
-   
+  [Research] (http://www.w3.org/2000)
+   -This website provides images and help for CSS. 
 
 ### Project Overview
 ---
