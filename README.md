@@ -16,8 +16,10 @@ The resources I used for this project are as follows:
    -This website provides planting info according to the users zone based on location in the United States.
    [Research] Chart.js (w3schools.com)
    - Growing Chart, based on my own research as a gardener for over five years.
-   [Research] https://fonts.googleapis.com; http://www.w3.org/2000/svg; 
+   [Research] (https://fonts.googleapis.com); (http://www.w3.org/2000/svg); 
    -Fonts and CSS help with images and colors.
+   [Research] (https://www.youtube.com/@CodeCraftStudio) Tuturials and help on building
+   API, weather apps, etc.
 
 
 
