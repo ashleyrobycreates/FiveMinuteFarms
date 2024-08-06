@@ -1,5 +1,3 @@
-
-
 const apiKey = process.env.WEATHER_API_KEY;
 const dateObj = new Date();
 
