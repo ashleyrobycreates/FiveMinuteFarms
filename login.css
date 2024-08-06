@@ -40,7 +40,6 @@ body {
     border: 1px solid #ccc;
     box-sizing: border-box;
 } 
-
 .login-container {
     display: flex;
     flex-direction: column; /* Arrange items in a column */
