@@ -33,6 +33,6 @@ navigator.geolocation.getCurrentPosition(position => {
    fetchWeatherData(location);
 
 },error => {
-    
+    console.log(`Error getting location`, error);
 });
     
