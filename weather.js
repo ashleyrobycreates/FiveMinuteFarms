@@ -1,4 +1,5 @@
-require('dotenv').config();
+require('dotenv').config();//keeps saying require not defined. redownloaded node.js and checked
+//npm. still not working.
 
 const apiKey = process.env.WEATHER_API_KEY;
 const dateObj = new Date();
