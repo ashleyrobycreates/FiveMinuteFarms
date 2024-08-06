@@ -1,8 +1,6 @@
 require('dotenv').config();
 
 const apiKey = process.env.WEATHER_API_KEY;
-console.log(`Your API key is: ${apiKey}`);
-
 const dateObj = new Date();
 
 const getDayName = (dayType, dateVal = dateObj) => dateVal. 
