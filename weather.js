@@ -1,4 +1,8 @@
-const apiKey = APIKEY;
+// Load environment variables from .env file
+require('dotenv').config();
+
+// Access the API key from environment variables
+const apiKey = process.env.APIKEY;
 const dateObj = new Date();
 
 const getDayName = (dayType, dateVal = dateObj) => dateVal. 
