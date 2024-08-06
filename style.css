@@ -167,3 +167,7 @@ canvas#myChart {
     margin: 5rem auto;
     padding: 2rem;
 }
+-webkit-hyphens: auto;
+                  hyphens: auto;
+                  word-wrap: break-word;
+                  overflow-wrap: anywhere;
