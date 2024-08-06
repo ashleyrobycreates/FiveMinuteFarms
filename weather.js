@@ -26,7 +26,7 @@ function fetchWeatherData(location) {
 
 fetchWeatherData();
 
-navigator.geolocation.getCurrentPosition(function(position => {
+navigator.geolocation.getCurrentPosition(position => {
    const latitude = position.coords.latitude;
    const longitude = position.coords.longitude;
    const location = `${latitude}, ${longitude}`;
