@@ -1,32 +1,64 @@
 /* Form sign in sign up styles */
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
+html { 
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #c552d6;
-    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
 }
 
-
-.login-container {
+body {
+    background-image: url('img/flowers.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+    height: 100%;
+}
+/*top of page grid*/
+.container {  
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns of equal width */
+    grid-template-columns: repeat(6, 1fr); /* 5 columns of equal width */
     gap: 5px; /* Gap between grid items */
     background-color: pink;
     border: 2px solid hsl(327, 97%, 49%);
     padding: 5px;
-    width: 100%; /* Full width */
-    max-width: 450px;
-    background: #fff ;
-    padding: 50px 60px 70px;
+}
+/* Grid item styles */
+.container > div {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
     text-align: center;
-    border-radius: 8px; /* Rounded corners */
+} 
+/* Image container styles */
+.container img {
+    flex: 1 1 calc(25% - 20px); /* 5 items  */
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+} 
+header {
+    font-size: medium;
+    margin: 1rem;
+    padding: 1rem;
+    color: #171716;
+    background-color: pink;
+    border: 2px solid hsl(330, 97%, 49%);
+    border-radius: 8px;
 
 }
+.login-container {
 
+    background-color: pink;
+    border: 2px solid hsl(327, 97%, 49%);
+    padding: 5px;
+    width: 50%;
+    border-radius: 8px; /* Full width */
+    
+}
 input {
     width: 100%;
     background: transparent;
@@ -34,21 +66,9 @@ input {
     outline: 0;
     padding: 10px 5px;
 }
-.input-field {
-    padding: 10px;
-    background: #1ff822;
-    color: #8b089f;
-    min-width: 50px;
-    text-align: center;
-}
 
-.btn-field {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
 
-}
-.btn-field button {
+.button {
     height: 40px;
     flex-basis: 48%;
     background: #8b089f;

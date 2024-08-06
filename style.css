@@ -25,7 +25,7 @@ h1 {
 /*Top of page grid*/
 .container {  
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns of equal width */
+    grid-template-columns: repeat(6, 1fr); /* 5 columns of equal width */
     gap: 5px; /* Gap between grid items */
     background-color: pink;
     border: 2px solid hsl(327, 97%, 49%);
