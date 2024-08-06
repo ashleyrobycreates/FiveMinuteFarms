@@ -1,5 +1,4 @@
-require('dotenv').config();//keeps saying require not defined. redownloaded node.js and checked
-//npm. still not working.
+require('dotenv').config();
 
 const apiKey = process.env.WEATHER_API_KEY;
 const dateObj = new Date();
@@ -7,9 +6,9 @@ const dateObj = new Date();
 const getDayName = (dayType, dateVal = dateObj) => dateVal. 
 toLocaleDateString('en-US', {weekday: dayType });
 
-function fetchWeatherData(location){
-    const apiUrl = 'https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&5days';
-    
+function fetchWeatherData(location) {
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&days=5`;
+
     fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
