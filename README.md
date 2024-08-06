@@ -41,7 +41,7 @@ The project is organized as follows:
 
   | Feature        | Description                           |
   |----------------|---------------------------------------|
-  | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party Spotify API to display users profile and music information |
+  | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party weather API and Spotify API to display users profile and music information |
   | Visualize data in a user friendly way | Relaxing images and color scheme, like candy for the eye. |
   | Visually appealing UI | Created a clean and modern UI with a color palette that is cohesive across the project. |
   | Responsive Design | Each page uses media queries and flexbox to adapt the design for multiple screen sizes, and was developed using a mobile-first approach. |
