@@ -45,7 +45,7 @@ The project is organized as follows:
   |Visualize data in a user friendly way by using a growing chart. |
 
 ## Getting Started
-1. Visit the Spotify API webpage to retrieve your free API key:[Third-Party API] (https://developer.spotify.com/documentation/web-api/howtos/web-app-profile) and  Visit the weather API webpage to retrieve your free API key:[Third-Party API] (https://https://www.weatherapi.com/)
+1.  Visit the weather API webpage to retrieve your free API key:[Third-Party API] (https://https://www.weatherapi.com/)
 
 2. Clone this repository to your local machine using Git:
 
