@@ -8,7 +8,6 @@ body {
     color: green;
     height: 100%;
 }
-/* Header styles */
 h1 {
     text-align: center;
     font-size: large;
@@ -18,9 +17,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(6, 1fr); 
     gap: 5px; /* Gap between grid items */
-    background-color: pink;
-    border: 2px solid hsl(327, 97%, 49%);
-    padding: 5px;
+    border: 2px solid hsl(327, 97%, 49%)
 }
 .wrapper{
     display: flex;
@@ -28,11 +25,10 @@ h1 {
     justify-content: center;
     height: 90vh;
 }
-
 .container {
     border-radius: 25px;
     box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
-    background-color: #222831;
+    background-color: hsl(327, 97%, 49%);
     color: #ffffff;
     height: 400px;
 }
