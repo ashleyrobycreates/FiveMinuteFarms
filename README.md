@@ -50,7 +50,7 @@ The project is organized as follows:
 2. Clone this repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/ashleyrobycreates/Five-Minute-Farms.git
+git clone https://github.com/ashleyrobycreates/FiveMinuteFarms.git
 ```
 3. Navigate to the project directory:
 ```bash
