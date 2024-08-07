@@ -54,7 +54,7 @@ git clone https://github.com/ashleyrobycreates/FiveMinuteFarms.git
 ```
 3. Navigate to the project directory:
 ```bash
-cd Five-Minute-Farms
+cd FiveMinuteFarms
 ```
 4. Open the project directory in VsCode:
 ```bash
