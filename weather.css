@@ -1,35 +1,27 @@
-.home-container {
+
+body {
+    background-image: url('img/flowers.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+    height: 100%;
+}
+/* Header styles */
+h1 {
+    text-align: center;
+    font-size: large;
+}
+/*Top of page grid*/
+.container {  
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 5px; /* Gap between grid items */
     background-color: pink;
     border: 2px solid hsl(327, 97%, 49%);
     padding: 5px;
-    border-radius: 8px;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
-
-:root {
-    --gradient: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%);
-}
-
-
-* {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    line-height: 1.25em;
-}
-
-.clear {
-    clear: both;
-}
-
-body {
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #343d4b;
-}
-
 .wrapper{
     display: flex;
     align-items: center;
@@ -44,7 +36,6 @@ body {
     color: #ffffff;
     height: 400px;
 }
-
 .weather-side {
     position: relative;
     height: 100%;
@@ -61,7 +52,6 @@ body {
             transform: translateZ(0) scale(1.02) perspective(1000px);
     float: left;
 }
-
 .weather-side.day{
     background-color: #369FA1;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23369FA1'/%3E%3Cstop offset='1' stop-color='%233BDCCD'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
@@ -70,7 +60,6 @@ body {
     background-size: cover;
     
 }
-
 .weather-side.night{
     background-color: #0E2B61;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%2324858A'/%3E%3Cstop offset='1' stop-color='%230E2B61'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23195876'/%3E%3Cstop offset='1' stop-color='%230E2B61'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -78,12 +67,10 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-
 .weather-side:hover {
     -webkit-transform: scale(1.1) perspective(1500px) rotateY(10deg);
             transform: scale(1.1) perspective(1500px) rotateY(10deg);
 }
-
 .weather-gradient {
     position: absolute;
     width: 100%;
@@ -94,17 +81,14 @@ body {
     border-radius: 25px;
     opacity: 0.8;
 }
-
 .date-container {
     position: absolute;
     top: 25px;
     left: 25px;
 }
-
 .date-dayname {
     margin: 0;
 }
-
 .date-day {
     display: block;
 }
@@ -113,7 +97,6 @@ body {
     display: inline;
     margin-top: 10px;
 }
-
 .location-icon {
     display: inline-block;
     height: 0.8em;
@@ -121,55 +104,45 @@ body {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18,4.48a8.45,8.45,0,0,0-12,12l5.27,5.28a1,1,0,0,0,1.42,0L18,16.43A8.45,8.45,0,0,0,18,4.48ZM16.57,15,12,19.59,7.43,15a6.46,6.46,0,1,1,9.14,0ZM9,7.41a4.32,4.32,0,0,0,0,6.1,4.31,4.31,0,0,0,7.36-3,4.24,4.24,0,0,0-1.26-3.05A4.3,4.3,0,0,0,9,7.41Zm4.69,4.68a2.33,2.33,0,1,1,.67-1.63A2.33,2.33,0,0,1,13.64,12.09Z"/></svg>');
     background-repeat: no-repeat;
     background-size: contain;
-}
-  
+} 
 .weather-container {
     position: absolute;
     bottom: 25px;
     left: 25px;
 }
-
 .weather-icon.feather {
     height: 60px;
     width: auto;
 }
-
 .weather-temp {
     margin: 0;
     font-weight: 700;
     font-size: 4em;
 }
-
 .weather-desc {
     margin: 0;
 }
-
 .info-side {
     position: relative;
     float: left;
     height: 100%;
     padding-top: 5px;
 }
-
 .today-info {
     padding: 15px;
     margin: 0 25px 25px 25px;
     border-radius: 10px;
 }
-
 .today-info>div:not(:last-child) {
     margin: 0 0 10px 0;
 }
-
 .today-info>div .title {
     float: left;
     font-weight: 700;
 }
-
 .today-info>div .value {
     float: right;
 }
-
 .week-list {
     list-style-type: none;
     padding: 0;
@@ -179,7 +152,6 @@ body {
     border-radius: 10px;
     background: #
 }
-
 .week-list>li {
     float: left;
     padding: 15px;
@@ -189,7 +161,6 @@ body {
     transition: 200ms ease;
     border-radius: 10px;
 }
-
 .week-list>li:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -199,37 +170,31 @@ body {
     -webkit-box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
             box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2)
 }
-
 .week-list>li.active {
     background: #fff;
     color: #222831;
     border-radius: 10px;
 }
-
 .week-list>li .day-name {
     display: block;
     margin: 10px 0 0 0;
     text-align: center;
 }
-
 .week-list>li .day-icon {
     display: block;
     height: 30px;
     width: auto;
     margin: 0 auto;
 }
-
 .week-list>li .day-temp {
     display: block;
     text-align: center;
     margin: 10px 0 0 0;
     font-weight: 700;
 }
-
 .location-form {
     padding: 10px 35px;
 }
-
 .location-button {
     outline: none;
     width: 100%;
@@ -251,8 +216,6 @@ body {
     transition: transform 200ms ease;
     transition: transform 200ms ease, -webkit-transform 200ms ease;
 }
-
-
 input[type="text"] {
     display: block;
     background: #444;
@@ -266,17 +229,13 @@ input[type="text"] {
     border-radius: 20px;
     margin: 0 0 1em 0;
 }
-
 .location-button:hover {
     -webkit-transform: scale(0.95);
         -ms-transform: scale(0.95);
             transform: scale(0.95);
 }
-
 .location-button .feather {
     height: 1em;
     width: auto;
     margin-right: 5px;
 }
-
-
