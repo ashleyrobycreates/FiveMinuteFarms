@@ -18,7 +18,7 @@ body {
 /*top of page grid*/
 .container {  
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 6 columns of equal width */
+    grid-template-columns: repeat(6, 1fr); /* 6 columns of equal width */
     gap: 5px; /* Gap between grid items */
     background-color: pink;
     border: 2px solid hsl(327, 97%, 49%);

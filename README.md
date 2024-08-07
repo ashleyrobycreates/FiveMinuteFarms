@@ -8,8 +8,6 @@ The goal of the project is to demonstrate a general knowledge of HTML, CSS, and 
 
 ## Resources
 The resources I used for this project are as follows:
-- [Third-Party API](https://developer.spotify.com/documentation/web-api)
-   - This provides the user the ability to login to their own Spotify Profile.
   [Third-Party API] (www.weatherapi.com)
   - This provides the user up-to-date weather based on their location as well as weather icons.
   [Research] (www.growoya.com)
@@ -30,8 +28,6 @@ The project is organized as follows:
 
 **Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. (Please see **Note at bottom concerning API KEYS)
 
-**Spotify Profile API Music Player:** Using the third-party API allows users to link their Spotify profile directly onto the web app page, and consequently play music from their own library for themselves, and for the healthy growth of their seedlings and garden. (Please see **Note at bottom concerning API KEYS)
-
 **Garden Chart:** Growing chart in days based on seedlings, made based on my own research of over five years.
 
 **Garden Images:** Images have been added that show the various stages of planting and growing. 
@@ -41,7 +37,7 @@ The project is organized as follows:
 
   | Feature        | Description                           |
   |----------------|---------------------------------------|
-  | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party weather API and Spotify API to display users profile and music information |
+  | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party weather API |
   | Visualize data in a user friendly way | Relaxing images and color scheme, like candy for the eye. |
   | Visually appealing UI | Created a clean and modern UI with a color palette that is cohesive across the project. |
   | Responsive Design | Each page uses media queries and flexbox to adapt the design for multiple screen sizes, and was developed using a mobile-first approach. |
