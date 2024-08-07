@@ -66,7 +66,6 @@ npm install
 ```
 6. Use the live server VsCode extension to view the Index.html page
 
-
 **Note: This was created with the .env to keep my API KEY safe. However, after I coded all of this, I realized I was using vanilla.js and in the future would need to incorporate use of Express or React to hide my API KEY as I kept getting an error. I understand that I do NOT want to hardcode my API KEY. Thank you!**
 
 
