@@ -37,11 +37,11 @@ navigator.geolocation.getCurrentPosition(position => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Sample data - replace with data from API
+    // Sample data - replace with data from your API
     const weatherData = {
         dayName: "Tuesday",
         day: "August 8, 2024",
-        this.location: "New York, NY",
+        location: "New York, NY",
         weatherIcon: "https://cdn.weatherapi.com/weather/64x64/day/116.png",
         temperatureCelsius: 25, // Temperature in Celsius
         description: "Partly Cloudy",
