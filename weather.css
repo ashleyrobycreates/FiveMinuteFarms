@@ -12,13 +12,7 @@ h1 {
     text-align: center;
     font-size: large;
 }
-/*Top of page grid*/
-.container {  
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    gap: 5px; /* Gap between grid items */
-    border: 2px solid hsl(327, 97%, 49%)
-}
+
 .wrapper{
     display: flex;
     align-items: center;

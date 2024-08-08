@@ -38,8 +38,6 @@ h1 {
     border: 1px solid #ccc;
     text-align: center;
 } 
-
-
 .login-container {
     display: flex;
     flex-direction: column; /* Arrange items in a column */
