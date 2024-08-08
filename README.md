@@ -26,7 +26,7 @@ The project is organized as follows:
 
 **Sign Up Sign In** The user can sign up or sign in if they want to.
 
-**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. (Please see **Note at bottom concerning API KEYS)
+**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. 
 
 **Garden Chart:** Growing chart in days based on seedlings, made based on my own research of over five years.
 
@@ -66,8 +66,23 @@ npm install
 ```
 6. Use the live server VsCode extension to view the Index.html page
 
-**Note: This was created with the .env to keep my API KEY safe. However, after I coded all of this, I realized I was using vanilla.js and in the future would need to incorporate use of Express or React to hide my API KEY as I kept getting an error. I understand that I do NOT want to hardcode my API KEY. Thank you!**
+7. Create a package.json2. You want the server to be started and listening while you're working on your project or you will not be able to get the weather info. 
+-create file
+-name it package.json2
+-put this into the file:
 
+{
+    "name": "weather-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node backend/server.js"
+    },
+"workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
 
 
 
