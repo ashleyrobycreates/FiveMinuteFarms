@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const weatherData = {
         dayName: "Tuesday",
         day: "August 8, 2024",
-        location: "New York, NY",
+        this.location: "New York, NY",
         weatherIcon: "https://cdn.weatherapi.com/weather/64x64/day/116.png",
         temperatureCelsius: 25, // Temperature in Celsius
         description: "Partly Cloudy",
