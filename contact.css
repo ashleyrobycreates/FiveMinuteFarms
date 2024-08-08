@@ -23,19 +23,18 @@ body {
     background-color: pink;
     border: 2px solid hsl(327, 97%, 49%);
     padding: 5px;
+    padding: 5px;
+    justify-items: center; /* Center items horizontally */
+    align-items: center;
 }
-/* Grid item styles */
-.container > div {
+.contact-section {
+    grid-column: 2 / span 4; /* Span 4 columns */
+    grid-row: 1;
     background-color: white;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #2caa13;
     text-align: center;
-} 
-/* Image container styles */
-.container img {
-    flex: 1 1 calc(25% - 20px); /* 6 items  */
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-} 
+    width: 100%; /* Ensure it takes full width of the spanned columns */
+    max-width: 600px;
+    
+}
