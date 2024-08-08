@@ -27,14 +27,3 @@ body {
     justify-items: center; /* Center items horizontally */
     align-items: center;
 }
-.contact-section {
-    grid-column: 2 / span 4; /* Span 4 columns */
-    grid-row: 1;
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #2caa13;
-    text-align: center;
-    width: 100%; /* Ensure it takes full width of the spanned columns */
-    max-width: 600px;
-    
-}
