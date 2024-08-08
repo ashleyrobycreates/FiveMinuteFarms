@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const dateObj = new Date();
 
 function fetchWeatherData(location) {
