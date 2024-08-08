@@ -1,7 +1,7 @@
 const dateObj = new Date();
 
 function fetchWeatherData(location) {
-    const apiUrl = `https://localhost:5000/weather?location=${location}`;
+    const apiUrl = `https://localhost:5500/weather?location=${location}`;
 
     fetch (apiUrl)
     .then(response => {
