@@ -1,0 +1,90 @@
+html { 
+    justify-content: center;
+    font-size: small;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+}
+/* Body styles */
+body {
+    background-image: url('img/flowers.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+    height: 100%;
+}
+/* Header styles */
+h1 {
+    text-align: center;
+    font-size: extra-large;
+    font-weight: bold;
+    color: rgb(3, 164, 14);
+}
+/*Top of page grid*/
+.container {  
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 5px; /* Gap between grid items */
+    background-color: pink;
+    border: 2px solid hsl(327, 97%, 49%);
+    padding: 5px;
+}
+/* Grid item styles */
+.container > div {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+} 
+
+
+.login-container {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;
+    border: 2px solid hsl(327, 97%, 49%);
+    padding: 50px; /* Add padding for spacing */
+    width: 90%;
+    max-width: 400px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+.login-container #title {
+    font-size: 24px;
+    margin-bottom: 20px; /* Space between title and form */
+}
+.login-container form {
+    width: 100%;
+}
+.login-container input {
+    width: 100%;
+    background: transparent;
+    border: 2px solid hsl(330, 97%, 49%);
+    border-radius: 4px;
+    outline: 0;
+    padding: 10px 5px;
+    margin-bottom: 10px; /* Space between inputs */
+}.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: hsl(327, 97%, 49%);
+    color: white;
+    cursor: pointer;
+    margin-top: 10px; /* Space between buttons */
+}
+.login-container button:hover {
+    background-color: hsl(327, 97%, 40%); /* Darken on hover */
+}
+.btn-field button.disable {
+    background: #ccc;
+    color: #555;
+}
+

@@ -25,13 +25,6 @@ h1 {
     justify-content: center;
     height: 90vh;
 }
-.container {
-    border-radius: 25px;
-    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
-    background-color: hsl(327, 97%, 49%);
-    color: #ffffff;
-    height: 400px;
-}
 .weather-side {
     position: relative;
     height: 100%;

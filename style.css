@@ -45,15 +45,13 @@ h1 {
     height: auto;
     border: 1px solid #ccc;
     box-sizing: border-box;
-} 
-
+}
 h2 { 
     justify-content: center;
     font-size: medium;
     color:rgb(138, 43, 226)
     background-color: pink;
 }
-
 .cards {
     margin: 10px; auto; /* Center the cards */
     padding: 20px; 
@@ -70,7 +68,6 @@ h2 {
     background-color: pink;
     width: 75%;
 }
-
 .specific-img {
     width: 90%;
     display: block;
@@ -80,7 +77,6 @@ h2 {
     margin: auto;
    
 }
-
 aside {
     width: 100%;
     display: block;
@@ -92,7 +88,7 @@ aside {
     border-radius: 8px; /* Rounded corners */
     font-family: Arial, sans-serif; /* Font style */
 
-  }
+}
 header {
     font-size: medium;
     margin: 1rem;
@@ -103,92 +99,15 @@ header {
     border-radius: 8px;
 
 }
-  footer {
+footer {
     font-style: italic;
     font-size: small;
     color:black;
     text-align: center;
     background-color: rgb(247, 6, 162);
     border: 5px solid #0c0b00;
-  }
-  .login-container {
-    display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: pink;
-    border: 2px solid hsl(327, 97%, 49%);
-    padding: 50px; /* Add padding for spacing */
-    width: 90%;
-    max-width: 400px; /* Limit the maximum width */
-    margin: 0 auto; /* Center the container horizontally */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
-.login-container #title {
-    font-size: 24px;
-    margin-bottom: 20px; /* Space between title and form */
-}
-.login-container form {
-    width: 100%;
-}
-
-.login-container input {
-    width: 100%;
-    background: transparent;
-    border: 2px solid hsl(330, 97%, 49%);
-    border-radius: 4px;
-    outline: 0;
-    padding: 10px 5px;
-    margin-bottom: 10px; /* Space between inputs */
-}
-
-.login-container button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: hsl(327, 97%, 49%);
-    color: white;
-    cursor: pointer;
-    margin-top: 10px; /* Space between buttons */
-}
-
-.login-container button:hover {
-    background-color: hsl(327, 97%, 40%); /* Darken on hover */
-}
-}
-
-.btn-field button.disable {
-    background: #ccc;
-    color: #555;
-}
--webkit-hyphens: auto;
-                  hyphens: auto;
-                  word-wrap: break-word;
-                  overflow-wrap: anywhere;
-
-
-/* Media query for screens with a maximum width of 768px */
-@media (max-width: 768px) {
-    #profile h2 {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
-        color: #555; /* Slightly lighter color */
-    }
-
-    #profile ul li {
-        margin: 0.25rem 0; /* Reduce margin for smaller screens */
-    }
-
-    #profile ul li span,
-    #profile ul li a {
-        font-size: 1rem; /* Adjust font size for smaller screens */
-        color: #1db954; /* Keep the same color */
-    }
-}
-/*Growing chart*/
 canvas#myChart {
     width: 200%;
     height: 200%;
@@ -199,7 +118,10 @@ canvas#myChart {
     margin: 5rem auto;
     padding: 2rem;
 }
--webkit-hyphens: auto;
-                  hyphens: auto;
-                  word-wrap: break-word;
-                  overflow-wrap: anywhere;
+-webkit-hyphens {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+            word-break: break-word;
+            overflow-wrap: anywhere;
+}
