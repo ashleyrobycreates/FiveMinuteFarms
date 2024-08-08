@@ -1,9 +1,7 @@
-require('dotenv').config();
-
 const dateObj = new Date();
 
 function fetchWeatherData(location) {
-    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=6fecc3120ad242a68d363538240608&q=${location}&days=5`;
+    const apiUrl = `https://localhost:5000/weather?location=${location}`;
 
     fetch (apiUrl)
     .then(response => {
