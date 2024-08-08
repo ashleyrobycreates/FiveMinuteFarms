@@ -35,4 +35,4 @@ navigator.geolocation.getCurrentPosition(position => {
 },error => {
     console.log(`Error getting location`, error);
 });
-    
+
