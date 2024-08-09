@@ -12,5 +12,5 @@
   "license": "ISC",
   "devDependencies": {
     "nodeman": "^1.0.0" 
-  },
-  
+  }
+}
