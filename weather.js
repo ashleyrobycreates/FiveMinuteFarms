@@ -97,9 +97,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
  
-if (condition) {
-    // code block
-  } else {
-    
-}
-
