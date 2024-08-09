@@ -125,3 +125,34 @@ canvas#myChart {
             word-break: break-word;
             overflow-wrap: anywhere;
 }
+
+/* Media Queries for Small Screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: large;
+    }
+    .container {
+        grid-template-columns: 1fr; /* Single column layout */
+        padding: 10px;
+    }
+    .container > div {
+        padding: 10px;
+    }
+    .cards, .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .specific-img {
+        width: 100%;
+    }
+    aside, header, footer {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    canvas#myChart {
+        width: 100%;
+        height: auto;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+}
