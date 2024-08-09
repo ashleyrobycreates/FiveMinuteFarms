@@ -4,12 +4,12 @@
 .top-container {
     width: 100%;
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    position: fixed; /* Fix the navigation bar at the top */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: fixed; /*bar at top */
     top: 0;
-    background-color: #343d4b; /* Background color to match the page */
-    padding: 10px 0; /* Padding for some space around the link */
+    background-color: #343d4b; /* Background */
+    padding: 10px 0; /* Padding space around link */
     z-index: 1000; /* Ensure it stays on top of other content */
 }
 
@@ -228,7 +228,7 @@ body {
     padding: 10px 10px; /*bigger button */
     font-size: 1em; 
     width: 100%; /* Make the button fit the container */
-    box-sizing: border-box; /* Ensure padding is included in the width */
+    box-sizing: border-box;
     border: none;
     border-radius: 4px;
     background-color: hsl(327, 97%, 49%);
