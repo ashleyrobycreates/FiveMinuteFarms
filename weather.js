@@ -96,4 +96,10 @@ document.addEventListener("DOMContentLoaded", function() {
         weekList.appendChild(listItem);
     });
 });
+ 
+if (condition) {
+    // code block
+  } else {
+    
+}
 
