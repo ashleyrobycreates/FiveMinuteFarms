@@ -1,10 +1,9 @@
 # Web Development Project
 This is my capstone project for CODE:You. The project utilizes a third-party api to retrieve information, that is then presented to the user with a helpful interface. 
-The user is able to interact with the information provided by searching for available options. 
-The goal of the project is to demonstrate a general knowledge of HTML, CSS, and JavaScript.
+The user is able to interact with the information provided by searching for available options.The goal of the project is to demonstrate a general knowledge of HTML, CSS, and JavaScript.
 
 ## Overview
- Hello! Welcome to Five Minute Farms! This website was made to advise anyone, in basic steps, how to grow an easy, small farm. According to my own research and web based research, plants DO respond to music and sounds! For this reason, a Spotify profile media player is included for users to login and play music/soundwaves to help their garden grow healthier and happier. A growth chart is provided to show in days approximately how long it takes to grow from a seedling to "ready to plant" status. Finally, an images page shows various stages of seedlings and gardens. Happy plants = happy harvest!
+ Hello! Welcome to Five Minute Farms! This website was made to advise anyone, in basic steps, how to grow the easy tomato plant, or any plant, from seeds. According to my own research and web based research, plants DO respond to music and sounds! For this reason, a Spotify media player is included for users to see a sample playlist. A USDA planting zone chart shows locations with temperature extremes based on US data. A weather API was incorporated to show a 5 day weather forecast for the users locale. A growth chart is provided to show in days approximately how long it takes to grow from a seedling to "ready to plant" status. An images page shows various stages of seedlings and gardens. Finally, a simple contact page was created. Happy plants = happy harvest!
 
 ## Resources
 The resources I used for this project are as follows:
@@ -14,8 +13,10 @@ The resources I used for this project are as follows:
    -This website provides planting info according to the users zone based on location in the United States.
   [Research] Chart.js (w3schools.com)
    - Growing Chart, based on my own research as a gardener for over five years.
-  [Research] (http://www.w3.org/2000), (https://fonts.googleapis.com)
+  [Research] (https://www.w3.org/2000), (https://fonts.googleapis.com), (https://Youtube.com)
    -This website provides images & fonts. Also, I watched various Youtube tutorials and consulted copilots on how to set up a weather API.
+   [Research] (https://open.spotify.com) 
+   -An embedded music player from Spotify with playlist was included for users to explore.
 
 ### Project Overview
 ---
@@ -32,6 +33,7 @@ The project is organized as follows:
 
 **Garden Images:** Images have been added that show the various stages of planting and growing. 
 
+**Contact Page:**
 
 ## Features Utilized for the project
 
