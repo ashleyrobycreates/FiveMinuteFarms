@@ -62,7 +62,7 @@ cd FiveMinuteFarms
 ```bash
 code .
 ```
-5. Install dependencies:
+5. Install dependencies in frontend and backend:
 ```bash
 npm install
 ```
