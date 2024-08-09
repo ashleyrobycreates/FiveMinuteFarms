@@ -15,17 +15,21 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: green;
     height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Header styles */
 h1 {
     text-align: center;
-    font-size: 2rem; /* Use rem for better scalability */
+    font-size: 3rem; /* Use rem for better scalability */
     font-weight: bold;
-    color: rgb(3, 164, 14);
+    color: rgb(253, 250, 252);
 }
 
-/* Top of page grid */
+/* Navigation styles */
 .container {  
     display: grid;
     grid-template-columns: repeat(6, 1fr); 
@@ -33,71 +37,61 @@ h1 {
     background-color: pink;
     border: 2px solid hsl(327, 97%, 49%);
     padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Grid item styles */
 .container > div {
     background-color: white;
-    padding: 1rem;
+    padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
-} 
+}
 
-/* Login container styles */
-.login-container {
+/* Contact section styles */
+.contact-section {
     display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-color: pink;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    padding: 2rem;
     border: 2px solid hsl(327, 97%, 49%);
-    padding: 2rem; /* Add padding for spacing */
-    width: 90%;
-    max-width: 400px; /* Limit the maximum width */
-    margin: 0 auto; /* Center the container horizontally */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.login-container #title {
-    font-weight: bold;
-    font-size: 3rem;
-    margin-bottom: 1rem; /* Space between title and form */
-}
-
-.login-container form {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
-}
-
-.login-container input {
-    width: 100%;
-    background: transparent;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
     border: 2px solid hsl(330, 97%, 49%);
     border-radius: 4px;
-    outline: 0;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem; /* Space between inputs */
+    outline: none;
 }
 
-.login-container button {
-    width: 100%;
+.contact-form button {
     padding: 0.5rem;
     border: none;
     border-radius: 4px;
     background-color: hsl(327, 97%, 49%);
     color: white;
     cursor: pointer;
-    margin-top: 0.5rem; /* Space between buttons */
 }
 
-.login-container button:hover {
-    background-color: hsl(327, 97%, 40%); /* Darken on hover */
-}
-
-.btn-field button.disable {
-    background: #ccc;
-    color: #555;
+.contact-form button:hover {
+    background-color: hsl(327, 97%, 40%);
 }
 
 /* Media Queries for Small Screens */
@@ -112,15 +106,15 @@ h1 {
     .container > div {
         padding: 0.5rem;
     }
-    .login-container {
+    .contact-section {
         padding: 1rem;
-        width: 100%;
-        max-width: none;
     }
-    .login-container #title {
-        font-size: 1.25rem;
+    .contact-form {
+        padding: 1rem;
     }
-    .login-container input, .login-container button {
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
         padding: 0.5rem;
     }
 }
