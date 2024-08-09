@@ -27,7 +27,7 @@ The project is organized as follows:
 
 **Sign Up Sign In** The user can sign up or sign in if they want to.
 
-**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. Note: I had to install a certificate so that I could change my http to https. I also had to get help to make a backend server to store my API Key. 
+**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. Note: I had to install a SSL certificate, it kept saying "not secure", so that I could change my http to https. It was loaded in March 2024. It has been very buggy. Hopefully, this will load now.*
 
 **Garden Chart:** Growing chart in days based on seedlings, made based on my own research of over five years.
 
