@@ -144,46 +144,4 @@ function celsiusToFahrenheit(celsius) {
     return (celsius * 9/5) + 32;
 }
 
-// Fetch weather data from API
-function fetchWeatherData(location) {
-    const apiUrl = `http://localhost:3000/weather?location=${location}`;
 
-    fetch(apiUrl)
-        .then(response => {
-            // Make sure the response is OK
-            if (!response.ok) {
-                throw new Error('Network response error: ' + response.statusText);
-            }
-            // Convert response to JSON
-            return response.json();
-        })
-        .then(data => {
-            // Log JSON data
-            console.log(data);
-            // Update weather data with fetched data
-            updateDayName(data.dayName);
-            updateDay(data.day);
-            updateLocation(data.location);
-            updateWeatherIcon(data.weatherIcon);
-            updateTemperature(data.temperatureCelsius);
-            updateDescription(data.description);
-            updatePrecipitation(data.precipitation);
-            updateHumidity(data.humidity);
-            updateWind(data.wind);
-            updateForecast(data.forecast);
-        })
-        .catch(error => {
-            // Handle the error
-            console.error('There has been a problem with your fetch operation:', error);
-        });
-}
-
-// Get current location and fetch weather data
-navigator.geolocation.getCurrentPosition(position => {
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
-    const location = `${latitude}, ${longitude}`;
-    fetchWeatherData(location);
-}, error => {
-    console.log('Error getting location', error);
-});
