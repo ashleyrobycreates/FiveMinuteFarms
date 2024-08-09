@@ -37,7 +37,7 @@ navigator.geolocation.getCurrentPosition(position => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Sample data - replace with data from your API
+    //replace with data from API
     const weatherData = {
         dayName: "Tuesday",
         day: "August 8, 2024",

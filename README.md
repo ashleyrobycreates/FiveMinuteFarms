@@ -27,13 +27,13 @@ The project is organized as follows:
 
 **Sign Up Sign In** The user can sign up or sign in if they want to.
 
-**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. 
+**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. Note: I had to install a certificate so that I could change my http to https. I also had to get help to make a backend server to store my API Key. 
 
 **Garden Chart:** Growing chart in days based on seedlings, made based on my own research of over five years.
 
 **Garden Images:** Images have been added that show the various stages of planting and growing. 
 
-**Contact Page:**
+**Contact Page:** Created if the user would like to email me and send a note.
 
 ## Features Utilized for the project
 
