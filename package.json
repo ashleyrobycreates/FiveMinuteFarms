@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodeman": "^1.1.2"
-  }
-}
+    "nodeman": "^1.0.0" 
+  },
+  
