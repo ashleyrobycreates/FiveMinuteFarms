@@ -39,15 +39,15 @@ navigator.geolocation.getCurrentPosition(position => {
 document.addEventListener("DOMContentLoaded", function() {
     //replace with data from API
     const weatherData = {
-        dayName: "Tuesday",
-        day: "August 8, 2024",
-        location: "New York, NY",
+        dayName: "",
+        day: ",
+        location: "",
         weatherIcon: "https://cdn.weatherapi.com/weather/64x64/day/116.png",
-        temperatureCelsius: 25, // Temperature in Celsius
-        description: "Partly Cloudy",
-        precipitation: "10%",
-        humidity: "60%",
-        wind: "15 km/h",
+        temperatureCelsius: , // Temperature in Celsius
+        description: "",
+        precipitation: "",
+        humidity: "",
+        wind: "",
         forecast: [
             { dayName: "Wed", icon: "https://cdn.weatherapi.com/weather/64x64/day/119.png", tempCelsius: 22 },
             { dayName: "Thu", icon: "https://cdn.weatherapi.com/weather/64x64/day/176.png", tempCelsius: 24 },
