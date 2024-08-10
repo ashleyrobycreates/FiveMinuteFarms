@@ -1,11 +1,15 @@
 const dateObj = new Date();
 
-const getDayName = (dayType, dateVal = dateObj) => dateVal.
-toLocaleDateString("en-US", { weekday: dayType });
+const getDayName = (dayType, dateVal = dateObj) => dateVal.toLocaleDateString('en-US', {weekday: dayType})
 
 function fetchWeatherData(location) {
     const apiUrl = `http://localhost:3000/weather?location=${location}`;
 
+    const currentDay = getDayName('long');
+    const fullDateStr = dateObj.toLocaleDateString('en-US',{day: "numeric", month: "short", year: "numeric"});
+    document.querySelector(".date-day").textContent = fullDateStr;
+    document.querySelector(".date-dayname").textContent = currentDay;
+    
     fetch (apiUrl)
     .then(response => response.json());
     
