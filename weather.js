@@ -11,8 +11,7 @@ function fetchWeatherData(location) {
     document.querySelector(".date-dayname").textContent = currentDay;
     
     fetch (apiUrl)
-    .then(response => response.json());
-    
+    .then(response => response.json())
     .then(data => {
         //Log JSON data
         //console.log(data);
