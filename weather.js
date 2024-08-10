@@ -1,4 +1,3 @@
-const apiKey = "API_KEY";
 const dateObj = new Date();
 
 const getDayName = (dayType, dateVal = dateObj) => dateVal.
@@ -20,6 +19,15 @@ function fetchWeatherData(location) {
     .then(data => {
         //Log JSON data
         console.log(data);
+        document.querySelector(".date-dayname").textContent = getDayName("long", new Date(data.current.last_updated));
+        document.querySelector('.location').textContent = `${data.location.name}, ${data.location.country}`;
+        document.querySelector('.weather-temp').textContent = `${data.current.temp_f}°F`;
+        document.querySelector('.weather-desc').textContent = `${data.current.condition.text}`;
+        document.querySelector('.weather-icon').src = `https:${data.current.condition.icon}`;
+        document.querySelector('.precepitation.value').textContent = `${data.current.precip_in}`;
+        document.querySelector('.humidity.value').textContent = `${data.current.humidity} %`;
+        document.querySelector('.wind.value').textContent = `${data.current.wind_mph} mph`; 
+
         ;
     })
     .catch(error => {
