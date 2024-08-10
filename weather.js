@@ -27,7 +27,11 @@ function fetchWeatherData(location) {
         document.querySelector('.precepitation.value').textContent = `${data.current.precip_in}`;
         document.querySelector('.humidity.value').textContent = `${data.current.humidity} %`;
         document.querySelector('.wind.value').textContent = `${data.current.wind_mph} mph`; 
-
+        if(data.current.is_day){
+            document.querySelector(".weather-side").classList.replace("night", "day");
+        }else{
+            document.querySelector(".weather-side").classList.replace("day", "night");
+        }
         updateForcastData(data.forecast);
         
     })
