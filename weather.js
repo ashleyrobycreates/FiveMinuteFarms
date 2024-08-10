@@ -12,6 +12,7 @@ function fetchWeatherData(location) {
     
     fetch (apiUrl)
     .then(response => response.json())
+    
     .then(data => {
         //Log JSON data
         //console.log(data);
