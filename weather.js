@@ -1,4 +1,8 @@
+const apiKey = "API_KEY";
 const dateObj = new Date();
+
+const getDayName = (dayType, dateVal = dateObj) => dateVal.
+toLocaleDateString("en-US", { weekday: dayType });
 
 function fetchWeatherData(location) {
     const apiUrl = `http://localhost:3000/weather?location=${location}`;
@@ -40,18 +44,18 @@ navigator.geolocation.getCurrentPosition(position => {
 document.addEventListener("DOMContentLoaded", function() {
     // Replace with data from API
     const weatherData = {
-        dayName: "Friday",
-        day: "9",
-        location: "Lexington, KY",
+        dayName: "",
+        day: "",
+        location: "",
         weatherIcon: "https://cdn.weatherapi.com/weather/64x64/day/116.png",
-        temperatureCelsius: 25, // Temperature in Celsius
-        description: "Partly cloudy",
-        precipitation: "10%",
-        humidity: "60%",
-        wind: "15 km/h",
+        temperatureCelsius: 0, // Temperature in Celsius
+        description: "",
+        precipitation: "",
+        humidity: "",
+        wind: "",
         forecast: [
-            { dayName: "Saturday", tempCelsius: 27, icon: "https://cdn.weatherapi.com/weather/64x64/day/113.png" },
-            { dayName: "Sunday", tempCelsius: 28, icon: "https://cdn.weatherapi.com/weather/64x64/day/116.png" }
+            { dayName: "", tempCelsius: 0, icon: "https://cdn.weatherapi.com/weather/64x64/day/113.png" },
+            { dayName: "", tempCelsius: 0, icon: "https://cdn.weatherapi.com/weather/64x64/day/116.png" }
         ]
     };
 
