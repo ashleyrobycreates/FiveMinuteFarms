@@ -36,7 +36,7 @@ function fetchWeatherData(location) {
         
     })
 }
-
+//Update forecast data
 function updateForcastData(forecastVal){
     const weekContainer = document.querySelector(".week-list");
     weekContainer.innerHTML = "";
@@ -47,9 +47,9 @@ function updateForcastData(forecastVal){
         {
             const liEl = document.createElement('li');
             liEl.innerHTML = `
-                <img class="day-icon" src="${dayVal.condition.icon}"alt=${eachForecast.date} temperature>
-                <span class="day-name">${getDayName("short", currentDate)}</span>
-                <span class="day-temp">${dayVal.maxtemp_c}°C</span>
+                <img class="day-icon" src="https:${dayObj.day.condition.icon}" alt=${dayObj.day.condition.text}">
+                <span class="day-name">${getDayName('short', currentDate)}</span>
+                <span class="day-temp">${dayObj.maxtemp_c}°C</span>
                 `
             weekContainer.appendChild(liEl);
         }
@@ -57,51 +57,21 @@ function updateForcastData(forecastVal){
     weekContainer.insertAdjacentHTML("beforeend", `div class="clear"></div>`);                                          
 }
 
+document.querySelector(`.location-form`).addEventListener('submit', function (event) {
+    event.preventDefault();
+    const searchLocation = document.getElementById('search-input').value;
+    if(searchLocation){
+        fetchWeatherData(searchLocation);
+    }
+});
 
-try {
-    // Code that may throw an error
-} catch (error) {
-    // Handle the error
-    console.error('There has been a problem with your fetch operation:', error);
-}
-
-fetchWeatherData();
-
+//Get location
 navigator.geolocation.getCurrentPosition(position => {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
     const location = `${latitude}, ${longitude})`;
     fetchWeatherData(location);
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    // Replace with data from API
-    const weatherData = {
-        dayName: "",
-        day: "",
-        location: "",
-        weatherIcon: "https://cdn.weatherapi.com/weather/64x64/day/116.png",
-        temperatureCelsius: 0, // Temperature in Celsius
-        description: "",
-        precipitation: "",
-        humidity: "",
-        wind: "",
-        forecast: [
-            { dayName: "", tempCelsius: 0, icon: "https://cdn.weatherapi.com/weather/64x64/day/113.png" },
-            { dayName: "", tempCelsius: 0, icon: "https://cdn.weatherapi.com/weather/64x64/day/116.png" }
-        ]
-    };
-
-    updateDayName(weatherData.dayName);
-    updateDay(weatherData.day);
-    updateLocation(weatherData.location);
-    updateWeatherIcon(weatherData.weatherIcon);
-    updateTemperature(weatherData.temperatureCelsius);
-    updateDescription(weatherData.description);
-    updatePrecipitation(weatherData.precipitation);
-    updateHumidity(weatherData.humidity);
-    updateWind(weatherData.wind);
-    updateForecast(weatherData.forecast);
+}, error => {
+    console.log('Error getting location', error);
 });
 
