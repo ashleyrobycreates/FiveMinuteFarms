@@ -7,18 +7,11 @@ function fetchWeatherData(location) {
     const apiUrl = `http://localhost:3000/weather?location=${location}`;
 
     fetch (apiUrl)
-    .then(response => {
-        //Make sure the response is OK
-        if (!response.ok) {
-            throw new Error('Network response error' + response.statusText);
-        }
-        //Convert response to JSON
-        return response.json();
-        
-    })
+    .then(response => response.json());
+    
     .then(data => {
         //Log JSON data
-        console.log(data);
+        //console.log(data);
         document.querySelector(".date-dayname").textContent = getDayName("long", new Date(data.current.last_updated));
         document.querySelector('.location').textContent = `${data.location.name}, ${data.location.country}`;
         document.querySelector('.weather-temp').textContent = `${data.current.temp_c}°C`;
@@ -32,17 +25,20 @@ function fetchWeatherData(location) {
         }else{
             document.querySelector(".weather-side").classList.replace("day", "night");
         }
+
         updateForcastData(data.forecast);
-        
-    })
+        })
+    .catch(error => {
+        console.log('Error fetching weather data', error);
+    });
 }
+
 //Update forecast data
-function updateForcastData(forecastVal){
+function updateForcastData(forecastData){
     const weekContainer = document.querySelector(".week-list");
     weekContainer.innerHTML = "";
-    forecastVal.forecastday.forEach(eachForecast => {
-       const dayVal = eachForecast.day;
-       const currentDate = new Date(eachForecast.date); 
+    forecastData.forecastday.forEach(dayObj => {
+       const currentDate = new Date(dayObj.date); 
         if(currentDate.toDateString() !== dateObj.toDateString())
         {
             const liEl = document.createElement('li');
