@@ -28,8 +28,33 @@ function fetchWeatherData(location) {
         document.querySelector('.humidity.value').textContent = `${data.current.humidity} %`;
         document.querySelector('.wind.value').textContent = `${data.current.wind_mph} mph`; 
 
-        ;
+        updateForcastData(data.forecast);
+        
     })
+}
+
+function updateForcastData(forecasVal){
+    const weekContainer = document.querySelector(".week-list");
+    weekContainer.innerHTML = "";
+    forcastVal.forecastday.forEach(eachForecast => {
+       const dayVal = eachForecast.day;
+       const currentDate = new Date(eachForecast.date); 
+        if(currentDate.toDateString() !== dateObj.toDateString())
+            {
+                const liEl = document.createElement('li');
+                liEl.innerHTML = `
+                    <img src="${dayVal.condition.icon}"alt=${dayVal.day}/>
+                    `
+            }
+            return;
+        }
+
+    })
+}
+
+
+
+
     .catch(error => {
         //handle the error
         console.error('There has been a problem with your fetch operation:', error);
@@ -48,7 +73,8 @@ navigator.geolocation.getCurrentPosition(position => {
     console.log(`Error getting location`, error);
 });
 
-//if then...  
+
+
 document.addEventListener("DOMContentLoaded", function() {
     // Replace with data from API
     const weatherData = {
@@ -78,82 +104,4 @@ document.addEventListener("DOMContentLoaded", function() {
     updateWind(weatherData.wind);
     updateForecast(weatherData.forecast);
 });
-
-function updateDayName(dayName) {
-    if (dayName) {
-        document.querySelector(".date-dayname").textContent = dayName;
-    }
-}
-
-function updateDay(day) {
-    if (day) {
-        document.querySelector(".date-day").textContent = day;
-    }
-}
-
-function updateLocation(location) {
-    if (location) {
-        document.querySelector(".location").textContent = location;
-    }
-}
-
-function updateWeatherIcon(weatherIcon) {
-    if (weatherIcon) {
-        document.querySelector(".weather-icon").src = weatherIcon;
-    }
-}
-
-function updateTemperature(temperatureCelsius) {
-    if (temperatureCelsius !== undefined) {
-        const temperatureFahrenheit = celsiusToFahrenheit(temperatureCelsius);
-        document.querySelector(".weather-temp").textContent = `${temperatureFahrenheit.toFixed(1)}°F`;
-    }
-}
-
-function updateDescription(description) {
-    if (description) {
-        document.querySelector(".weather-desc").textContent = description;
-    }
-}
-
-function updatePrecipitation(precipitation) {
-    if (precipitation) {
-        document.querySelector(".precipitation .value").textContent = precipitation;
-    }
-}
-
-function updateHumidity(humidity) {
-    if (humidity) {
-        document.querySelector(".humidity .value").textContent = humidity;
-    }
-}
-
-function updateWind(wind) {
-    if (wind) {
-        document.querySelector(".wind .value").textContent = wind;
-    }
-}
-
-function updateForecast(forecast) {
-    if (forecast && forecast.length > 0) {
-        const weekList = document.querySelector(".week-list");
-        weekList.innerHTML = ""; // Clear existing items
-
-        forecast.forEach(day => {
-            const dayTempFahrenheit = celsiusToFahrenheit(day.tempCelsius);
-            const listItem = document.createElement("li");
-            listItem.innerHTML = `
-                <img class="day-icon" src="${day.icon}" alt="">
-                <span class="day-name">${day.dayName}</span>
-                <span class="day-temp">${dayTempFahrenheit.toFixed(1)}°F</span>
-            `;
-            weekList.appendChild(listItem);
-        });
-    }
-}
-
-function celsiusToFahrenheit(celsius) {
-    return (celsius * 9/5) + 32;
-}
-
 
