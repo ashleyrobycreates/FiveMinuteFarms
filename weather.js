@@ -49,7 +49,8 @@ function updateForcastData(forecastVal){
                 `
             weekContainer.appendChild(liEl);
         }
-    })                                              
+    })
+    weekContainer.insertAdjacentHTML("beforeend", `div class="clear"></div>`);                                          
 }
 
 
