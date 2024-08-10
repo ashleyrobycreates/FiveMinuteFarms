@@ -33,46 +33,41 @@ function fetchWeatherData(location) {
     })
 }
 
-function updateForcastData(forecasVal){
+function updateForcastData(forecastVal){
     const weekContainer = document.querySelector(".week-list");
     weekContainer.innerHTML = "";
-    forcastVal.forecastday.forEach(eachForecast => {
+    forecastVal.forecastday.forEach(eachForecast => {
        const dayVal = eachForecast.day;
        const currentDate = new Date(eachForecast.date); 
         if(currentDate.toDateString() !== dateObj.toDateString())
-            {
-                const liEl = document.createElement('li');
-                liEl.innerHTML = `
-                    <img src="${dayVal.condition.icon}"alt=${dayVal.day}/>
-                    `
-            }
-            return;
+        {
+            const liEl = document.createElement('li');
+            liEl.innerHTML = `
+                <img class="day-icon" src="${dayVal.condition.icon}"alt=${eachForecast.date} temperature>
+                <span class="day-name">${getDayName("short", currentDate)}</span>
+                <span class="day-temp">${dayVal.maxtemp_f}°F</span>
+                `
+            weekContainer.appendChild(liEl);
         }
-
-    })
+    })                                              
 }
 
 
-
-
-    .catch(error => {
-        //handle the error
-        console.error('There has been a problem with your fetch operation:', error);
-    });
+try {
+    // Code that may throw an error
+} catch (error) {
+    // Handle the error
+    console.error('There has been a problem with your fetch operation:', error);
 }
 
 fetchWeatherData();
 
 navigator.geolocation.getCurrentPosition(position => {
-   const latitude = position.coords.latitude;
-   const longitude = position.coords.longitude;
-   const location = `${latitude}, ${longitude}`;
-   fetchWeatherData(location);
-
-},error => {
-    console.log(`Error getting location`, error);
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    const location = `${latitude}, ${longitude})`;
+    fetchWeatherData(location);
 });
-
 
 
 document.addEventListener("DOMContentLoaded", function() {
