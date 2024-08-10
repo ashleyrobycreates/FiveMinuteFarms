@@ -21,7 +21,7 @@ function fetchWeatherData(location) {
         console.log(data);
         document.querySelector(".date-dayname").textContent = getDayName("long", new Date(data.current.last_updated));
         document.querySelector('.location').textContent = `${data.location.name}, ${data.location.country}`;
-        document.querySelector('.weather-temp').textContent = `${data.current.temp_f}°F`;
+        document.querySelector('.weather-temp').textContent = `${data.current.temp_c}°C`;
         document.querySelector('.weather-desc').textContent = `${data.current.condition.text}`;
         document.querySelector('.weather-icon').src = `https:${data.current.condition.icon}`;
         document.querySelector('.precepitation.value').textContent = `${data.current.precip_in}`;
@@ -45,7 +45,7 @@ function updateForcastData(forecastVal){
             liEl.innerHTML = `
                 <img class="day-icon" src="${dayVal.condition.icon}"alt=${eachForecast.date} temperature>
                 <span class="day-name">${getDayName("short", currentDate)}</span>
-                <span class="day-temp">${dayVal.maxtemp_f}°F</span>
+                <span class="day-temp">${dayVal.maxtemp_c}°C</span>
                 `
             weekContainer.appendChild(liEl);
         }
