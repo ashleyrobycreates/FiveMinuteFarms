@@ -27,7 +27,7 @@ The project is organized as follows:
 
 **Sign Up Sign In** The user can sign up or sign in if they want to.
 
-**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. *Note: The local host 3000 seems to be the only host this will work on. After asking 2 other more qualified mentors, it has been very buggy. Hopefully, this will load though we could not figure out why it kept throwing a SSL certificate error.*
+**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. *Note: The local host 3000 seems to be the only host this will work on. After asking 2 other more qualified mentors, it has been very buggy. Sometimes it only loads the current date. Hopefully this will load correctly!*
 
 **Garden Chart:** Growing chart in days based on seedlings, made based on my own research of over five years.
 
