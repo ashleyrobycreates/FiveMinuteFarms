@@ -27,7 +27,7 @@ The project is organized as follows:
 
 **Sign Up Sign In** The user can sign up or sign in if they want to.
 
-**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. *Note: The local host 3000 seems to be the only host this will work on. After asking 2 other more qualified mentors, it has been very buggy. Sometimes it only loads the current date. Hopefully this will load correctly!*
+**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. *Note: After coding, I attempted to make an .env file to protect the apiKey, however I needed to download express and node.js, as well as create a backend. I had lots of help to set this up, because I was unfamiliar with those. Upon execution, the weather.js loads the date but not weather sometime. I tried to get this requirement running, but hopefully this will load correctly for those who try it!*
 
 **Garden Chart:** Growing chart in days based on seedlings, made based on my own research of over five years.
 
