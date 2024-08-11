@@ -5,12 +5,14 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodeman": "^1.0.0" 
+    "nodeman": "^1.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }
