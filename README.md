@@ -23,11 +23,11 @@ The resources I used for this project are as follows:
 
 The project is organized as follows:
 
-- **Landing Page:** The landing page provides the user with options to navigate the web application, log in and gives an overview of what to expect.
+- **Landing Page:** The landing page provides the user with options to navigate the web application, instructions for growing tomato seeds, a Spotify playlist with a sample of music to play for the plants, and a USDA Planting Zone image.
 
 **Sign Up Sign In** The user can sign up or sign in if they want to.
 
-**Weather API** Using third-party API, this allows users to get the weather based on their locale, and use this to help with planting needs. *Note: After coding, I attempted to make an .env file to protect the apiKey, however I needed to download express and node.js, as well as create a backend. I had lots of help to set this up, because I was unfamiliar with those. Upon execution, the weather.js loads the date but not weather sometime. I tried to get this requirement running, but hopefully this will load correctly for those who try it!*
+**Weather API** Using third-party API, this allows users to get the weather based on their locale and or the date, and use this to help with planting needs. *Note: After coding, I attempted to make an .env file as well as a .gitignore, to protect the apiKey. However, I needed to download express and node.js, as well as create a backend. I had lots of help to set this up, because I was unfamiliar with these. Upon execution, the API loads the date but not weather at times. I tried to get this requirement running, but hopefully this will load correctly for those who try it. Please know that I have worked very hard on this website and I am grateful to all the instructors and mentors as well!*
 
 **Garden Chart:** Growing chart in days based on seedlings, made based on my own research of over five years.
 
@@ -39,7 +39,7 @@ The project is organized as follows:
 
   | Feature        | Description                           |
   |----------------|---------------------------------------|
-  | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party weather API |
+  | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party weather API to display date and/or weather|
   | Visualize data in a user friendly way | Relaxing images and color scheme, like candy for the eye. |
   | Visually appealing UI | Created a clean and modern UI with a color palette that is cohesive across the project. |
   | Responsive Design | Each page uses media queries and flexbox to adapt the design for multiple screen sizes, and was developed using a mobile-first approach. |
