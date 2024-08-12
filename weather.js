@@ -13,27 +13,35 @@ function fetchWeatherData(location) {
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            document.querySelector(".date-dayname").textContent = getDayName("long", new Date(data.current.last_updated));
-            document.querySelector('.location').textContent = `${data.location.name}, ${data.location.country}`;
-            document.querySelector('.weather-temp').textContent = `${data.current.temp_c}°C`;
-            document.querySelector('.weather-desc').textContent = `${data.current.condition.text}`;
-            document.querySelector('.weather-icon').src = `https:${data.current.condition.icon}`;
-            document.querySelector('.precipitation .value').textContent = `${data.current.precip_in}`;
-            document.querySelector('.humidity .value').textContent = `${data.current.humidity} %`;
-            document.querySelector('.wind .value').textContent = `${data.current.wind_mph} mph`;
-            if (data.current.is_day) {
-                document.querySelector(".weather-side").classList.replace("night", "day");
-            } else {
-                document.querySelector(".weather-side").classList.replace("day", "night");
-            }
+            console.log(data); // Log the entire response to check structure
 
-            updateForcastData(data.forecast);
+            if (data.current) {
+                document.querySelector(".date-dayname").textContent = getDayName("long", new Date(data.current.last_updated));
+                document.querySelector('.location').textContent = `${data.location.name}, ${data.location.country}`;
+                document.querySelector('.weather-temp').textContent = `${data.current.temp_c}°C`;
+                document.querySelector('.weather-desc').textContent = `${data.current.condition.text}`;
+                document.querySelector('.weather-icon').src = `https:${data.current.condition.icon}`;
+                document.querySelector('.precipitation .value').textContent = `${data.current.precip_in}`;
+                document.querySelector('.humidity .value').textContent = `${data.current.humidity} %`;
+                document.querySelector('.wind .value').textContent = `${data.current.wind_mph} mph`;
+                if (data.current.is_day) {
+                    document.querySelector(".weather-side").classList.replace("night", "day");
+                } else {
+                    document.querySelector(".weather-side").classList.replace("day", "night");
+                }
+
+                updateForcastData(data.forecast);
+            } else {
+                console.log('Error: data.current is undefined');
+            }
         })
         .catch(error => {
             console.log('Error fetching weather data', error);
         });
 }
 
+
+//
 function updateForcastData(forecastData) {
     const weekContainer = document.querySelector(".week-list");
     weekContainer.innerHTML = "";
