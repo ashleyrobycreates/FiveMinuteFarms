@@ -27,7 +27,7 @@ The project is organized as follows:
 
 **Sign Up Sign In** The user can sign up or sign in if they want to.
 
-**Weather API** Using third-party API, this allows users to get the weather based on their locale and or the date, and use this to help with planting needs. *Note: After coding, I attempted to make an .env file as well as a .gitignore, to protect the apiKey. However, I needed to download express and node.js, as well as create a backend. I had lots of help to set this up, because I was unfamiliar with these. Upon execution, the API loads the date but not weather at times. I tried to get this requirement running, but hopefully this will load correctly for those who try it. Please know that I have worked very hard on this website and I am grateful to all the instructors and mentors as well!*
+**Weather API** Using third-party API, this allows users to get the weather based on their locale and or the date, and use this to help with planting needs. *Note: After coding, I didn't realize I was using vanilla.js, and I had to make an .env file & .gitignore, to protect the apiKey. I also needed to download express and node.js., as well as set up a backend file. Upon execution, the API loads the date but not weather at times. Each time, I had to type "npm run start" into my backend, and it would run on localhost.3000., when I tried to update my apiKey at https://www.weatherapi.com/, I kept getting "503 Service Unavailable,No server is available to handle this request." I tried to get this requirement running, but hopefully this will load correctly for those who try it. Thank you to all who helped me try to fix this.*
 
 **Garden Chart:** Growing chart in days based on seedlings, made based on my own research of over five years.
 
