@@ -1,9 +1,8 @@
 # Web Development Project
-This is my capstone project for CODE:You. The project utilizes third-party apis to retrieve information, that is then presented to the user with a helpful interface. 
-The user is able to interact with the information provided by searching for available options.The goal of the project is to demonstrate a general knowledge of HTML, CSS, and JavaScript.
+This is my capstone project for CODE:You. The user is able to interact with the information provided by searching for available options. The project utilizes a third-party api to retrieve information, that is then presented to the user with a helpful interface. The goal of the project is to demonstrate a general knowledge of HTML, CSS, and JavaScript with a little Node.js and express.
 
 ## Overview
- Hello! Welcome to Five Minute Farms! This website was made to advise anyone, in basic steps, how to grow the easy tomato plant, or any plant, from seeds. According to my own research and web based research, plants DO respond to music and sounds! For this reason, a Spotify media player is embedded for users to see a sample playlist. A USDA planting zone chart shows locations with temperature extremes based on US data. A growth chart is provided to show in days approximately how long it takes to grow from a seedling to "ready to plant" status. An images page shows various stages of seedlings and gardens. A random jokes API was created to tell jokes to your garden. Remember, plants love sounds and vibrations (and who doesn't love a good joke)! Finally, a simple contact page was created. Happy plants = happy harvest!
+ Hello! Welcome to Five Minute Farms! This website was made to advise anyone, in basic steps, how to grow the easy tomato plant, or any plant, from seeds. Also, according to my own research and web based research, plants DO respond to music and sounds! For this reason, a Spotify media player is embedded for users to see a sample playlist. A USDA planting zone chart shows locations with temperature extremes based on US data. A growth chart is provided to show in days approximately how long it takes to grow from a seedling to "ready to plant" status. An images page shows various stages of seedlings and gardens. A random jokes API was created to tell jokes to your garden. Remember, plants love sounds and vibrations (and who doesn't love a good joke)! Finally, a simple contact page was created. Happy plants = happy harvest!
 
 ## Resources
 The resources I used for this project are as follows:
@@ -16,7 +15,8 @@ The resources I used for this project are as follows:
    [Research] (https://open.spotify.com) 
    -An embedded music player from Spotify with playlist was included for users to explore.
    [Research] (youtube.com) 
-   -This was used to research several videos regarding API usages, copilot AI and technology coding and more.
+   -This was used to research several videos regarding API usages, copilot AI, technology, coding and more.
+   [Research] (https://pistilsnursery.com/blogs/journal/music-and-plant-growth-heres-what-the-science-says#:~:text=Believe%20it%20or%20not%2C%20studies%20indicate%20that%20plants,to%20increase%2C%20while%20harsher%20metal%20music%20induced%20stress) One of the resources used to show gardens thrive with music. 
 
 ### Project Overview
 ---
