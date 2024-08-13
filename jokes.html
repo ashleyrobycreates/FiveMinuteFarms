@@ -10,6 +10,7 @@
 <body>
     <nav class="container">  
         <div><a href="/index.html">Home</a></div>
+        <div><a href="/login.html">Sign In and Sign Up</a></div>
         <div><a href="/growingchart.html">Growing Chart</a></div>
         <div><a href="/gardenimages.html">Garden Images</a></div>
         <div><a href="/jokes.html">Jokes to Make Your Garden Laugh</a></div>
@@ -17,21 +18,36 @@
     </nav>
     <header>
         <h1>Jokes to Make Your Garden Laugh</h1>
-      </header>
-      <main>
+    </header>
+    <main>
         <button id="jokeButton">Get a Joke</button>
-        <p id="joke"></p>
-    </main><script>
-        const apiUrl = 'https://official-joke-api.appspot.com/random_joke';
+        <div id="joke" class="joke-box"></div>
+        <div id="jokeList" class="joke-box"></div>
+    </main>
+    <script>
+        let jokes = [];
 
         document.getElementById('jokeButton').addEventListener('click', () => {
-            fetch(apiUrl)
+            fetch('https://official-joke-api.appspot.com/random_joke')
                 .then(response => response.json())
                 .then(data => {
+                    jokes.push(data);
                     document.getElementById('joke').innerText = `${data.setup} - ${data.punchline}`;
+                    displayJokes();
                 })
                 .catch(error => console.error('Error fetching the joke:', error));
         });
+
+        function displayJokes() {
+            const jokeList = document.getElementById('jokeList');
+            jokeList.innerHTML = '';
+            jokes.forEach((joke, index) => {
+                const jokeItem = document.createElement('p');
+                jokeItem.innerText = `${index + 1}. ${joke.setup} - ${joke.punchline}`;
+                jokeList.appendChild(jokeItem);
+            });
+        }
     </script>
 </body>
 </html>
+
