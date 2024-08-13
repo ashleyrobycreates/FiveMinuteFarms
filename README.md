@@ -58,12 +58,20 @@ cd FiveMinuteFarms
 ```bash
 code .
 ```
-5. Install dependencies in frontend and backend:
-```bash
-npm install
-```
-6. Use the live server VsCode extension to view the Index.html page
+5. **Install Dependencies**: Install the required dependencies for both the frontend and backend:
+    ```bash
+    cd backend/contact-form-server
+    npm install
+    cd ../../frontend
+    npm install
 
+6. **Start the Backend Server**: Navigate to the backend directory and start the server:
+    ```bash
+    cd ../backend/contact-form-server
+    node server.js
+    ```
 
+7. **View the Frontend**: Use the Live Server extension in VSCode to view the `index.html` page. Alternatively, you can open the `index.html` file directly in your web browser.This project runs on Node.js and Express. Make sure you have Node.js installed on your machine.
 
-
+## Additional Notes
+- Ensure CORS is enabled in your backend server to allow communication between the frontend and backend.
