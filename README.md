@@ -1,9 +1,9 @@
 # Web Development Project
-This is my capstone project for CODE:You. The project utilizes a third-party api to retrieve information, that is then presented to the user with a helpful interface. 
+This is my capstone project for CODE:You. The project utilizes third-party apis to retrieve information, that is then presented to the user with a helpful interface. 
 The user is able to interact with the information provided by searching for available options.The goal of the project is to demonstrate a general knowledge of HTML, CSS, and JavaScript.
 
 ## Overview
- Hello! Welcome to Five Minute Farms! This website was made to advise anyone, in basic steps, how to grow the easy tomato plant, or any plant, from seeds. According to my own research and web based research, plants DO respond to music and sounds! For this reason, a Spotify media player is included for users to see a sample playlist. A USDA planting zone chart shows locations with temperature extremes based on US data. A weather API was incorporated to show a 5 day weather forecast for the users locale. A growth chart is provided to show in days approximately how long it takes to grow from a seedling to "ready to plant" status. An images page shows various stages of seedlings and gardens. Finally, a simple contact page was created. Happy plants = happy harvest!
+ Hello! Welcome to Five Minute Farms! This website was made to advise anyone, in basic steps, how to grow the easy tomato plant, or any plant, from seeds. According to my own research and web based research, plants DO respond to music and sounds! For this reason, a Spotify media player is embedded for users to see a sample playlist. A USDA planting zone chart shows locations with temperature extremes based on US data. A weather API was incorporated for current date and or weather. A growth chart is provided to show in days approximately how long it takes to grow from a seedling to "ready to plant" status. An images page shows various stages of seedlings and gardens. Finally, a simple contact page was created. Happy plants = happy harvest!
 
 ## Resources
 The resources I used for this project are as follows:
@@ -33,13 +33,16 @@ The project is organized as follows:
 
 **Garden Images:** Images have been added that show the various stages of planting and growing. 
 
+**Jokes to Make Your Garden Laugh:** A simple API to request random jokes to tell to your
+plants. Remember, they love vibration and a good laugh is great for anyone.
+
 **Contact Page:** Created if the user would like to email me and send a note.
 
 ## Features Utilized for the project
 
   | Feature        | Description                           |
   |----------------|---------------------------------------|
-  | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party weather API to display date and/or weather|
+  | Retrieve data from a 3rd party API and use it to display information. | Utilized the third-party weather API to display date and/or weather| Random jokes generate by an API to get several jokes when the button is submitted.
   | Visualize data in a user friendly way | Relaxing images and color scheme, like candy for the eye. |
   | Visually appealing UI | Created a clean and modern UI with a color palette that is cohesive across the project. |
   | Responsive Design | Each page uses media queries and flexbox to adapt the design for multiple screen sizes, and was developed using a mobile-first approach. |
