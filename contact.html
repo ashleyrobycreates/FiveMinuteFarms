@@ -10,7 +10,6 @@
 <body>
     <nav class="container">  
         <div><a href="/index.html">Home</a></div>
-        <div><a href="/weather.html">Weather</a></div>
         <div><a href="/growingchart.html">Growing Chart</a></div>
         <div><a href="/gardenimages.html">Garden Images</a></div>
         <div><a href="/jokes.html">Jokes to Make Your Garden Laugh</a></div>
@@ -41,14 +40,41 @@
   </div>
 </div>
 <script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
 
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
 
+            const formData = {
+                name: name,
+                email: email,
+                message: message
+            };
 
-  
-</script>
+            console.log('Form Data:', formData);
 
+            // You can use fetch to send the form data to a server endpoint
+            // fetch('/your-server-endpoint', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify(formData)
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     console.log('Success:', data);
+            // })
+            // .catch(error => {
+            //     console.error('Error:', error);
+            // });
+        });
+    </script>
 </body>
 </html>
+
 
 
 
