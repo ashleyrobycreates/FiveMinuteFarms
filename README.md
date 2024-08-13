@@ -39,8 +39,10 @@ The project is organized as follows:
   | Visualize data in a user friendly way | Relaxing images and color scheme, like candy for the eye. |
   | Visually appealing UI | Created a clean and modern UI with a color palette that is cohesive across the project. |
   | Responsive Design | Each page uses media queries and flexbox to adapt the design for multiple screen sizes, and was developed using a mobile-first approach. |
-  |Use of a regular expression to validate user input and either prevent the invalid input or inform the user about what happens with user input. |
-  |Visualize data in a user friendly way by using a growing chart. |
+  |Use of a regular expression to validate user input and either prevent the invalid input or inform the user about what happens with user input via the contact page |
+  | Visualize data in a user friendly way by using a growing chart. |
+  | Using arrays | Display jokes on the jokes app page. When the “Get a Joke” button is pushed, a joke is retrieved from the API and added to the jokes array and stored in a container visable on the page.
+  | Create a node.js web server using modern framework such as Express implemented on the contact page. |
 
 ## Getting Started
 1. [Third-Party API] endpoint (https://official-joke-api.appspot.com/random_joke) for free API with no key needed.
