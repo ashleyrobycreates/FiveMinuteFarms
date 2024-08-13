@@ -10,7 +10,7 @@ The resources I used for this project are as follows:
   -This provides the user random jokes to tell their seedlings and garden. This was a great way to put humor into a project.
   [Research] (www.growoya.com)
    -This website provides planting info according to the users zone based on location in the United States.
-  [Research] Chart.js (w3schools.com)
+  [Research] (www.w3schools.com)
    - Growing Chart, based on my own research as a gardener for over five years.
    [Research] (https://open.spotify.com) 
    -An embedded music player from Spotify with playlist was included for users to explore.
