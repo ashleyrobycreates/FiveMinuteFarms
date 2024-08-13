@@ -6,74 +6,90 @@
     <link rel="icon" href="/Img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/style.css">
     <title>Contact Me</title>
+    <style>
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 600px;
+        }
+        .contact-form input, .contact-form textarea, .contact-form button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <nav class="container">  
         <div><a href="/index.html">Home</a></div>
+        <div><a href="/login.html">Sign In and Sign Up</a></div>
+        <div><a href="/weather.html">Weather</a></div>
         <div><a href="/growingchart.html">Growing Chart</a></div>
         <div><a href="/gardenimages.html">Garden Images</a></div>
         <div><a href="/jokes.html">Jokes to Make Your Garden Laugh</a></div>
         <div><a href="/contact.html">Contact</a></div>
     </nav>
-<div class="contact-section">
-    <h1 class="book-h1">Contact Me!</h1>
-    <form class="contact-form" id="contactForm">
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Name"
-        required
-      />
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Email"
-        required
-      />
-      <textarea>
-        Message
-      </textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-</div>
- <script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+    <div class="contact-section">
+        <h1 class="book-h1">Contact Me!</h1>
+        <form class="contact-form" id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Name" required />
+            <input type="email" id="email" name="email" placeholder="Email" required />
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
 
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
 
-        const formData = {
-            name: name,
-            email: email,
-            message: message
-        };
+            const formData = {
+                name: name,
+                email: email,
+                message: message
+            };
 
-        fetch('http://localhost:3000/api/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
-            alert('Form submitted successfully!');
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('There was an error submitting the form.');
+            fetch('http://localhost:3000/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Form submitted successfully!');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error submitting the form.');
+            });
         });
-    });
-</script>
+    </script>
 </body>
 </html>
-
 
 
 
