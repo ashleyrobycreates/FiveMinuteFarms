@@ -26,7 +26,7 @@ The resources I used for this project are as follows:
 
 The project is organized as follows:
 
-- **Landing Page:** The landing page provides the user with options to navigate the web application, instructions for growing tomato seeds, a Spotify playlist with a sample of music to play for the plants, and a USDA Planting Zone image.
+**Landing Page:** The landing page provides the user with options to navigate the web application, instructions for growing tomato seeds, a Spotify playlist with a sample of music to play for the plants, and a USDA Planting Zone image.
 
 **Garden Chart:** Growing chart in days based on seedlings, made based on my own research of over five years.
 
