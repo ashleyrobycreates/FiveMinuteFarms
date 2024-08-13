@@ -15,6 +15,8 @@ The resources I used for this project are as follows:
    - Growing Chart, based on my own research as a gardener for over five years.
    [Research] (https://open.spotify.com) 
    -An embedded music player from Spotify with playlist was included for users to explore.
+   [Research] (youtube.com) 
+   -This was used to research several videos regarding API usages, copilot AI and technology coding and more.
 
 ### Project Overview
 ---
