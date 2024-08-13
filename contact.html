@@ -39,39 +39,38 @@
     </form>
   </div>
 </div>
-<script>
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
+ <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
 
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
 
-            const formData = {
-                name: name,
-                email: email,
-                message: message
-            };
+        const formData = {
+            name: name,
+            email: email,
+            message: message
+        };
 
-            console.log('Form Data:', formData);
-
-            // You can use fetch to send the form data to a server endpoint
-            // fetch('/your-server-endpoint', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify(formData)
-            // })
-            // .then(response => response.json())
-            // .then(data => {
-            //     console.log('Success:', data);
-            // })
-            // .catch(error => {
-            //     console.error('Error:', error);
-            // });
+        fetch('http://localhost:3000/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            alert('Form submitted successfully!');
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('There was an error submitting the form.');
         });
-    </script>
+    });
+</script>
 </body>
 </html>
 
