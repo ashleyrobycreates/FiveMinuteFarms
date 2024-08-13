@@ -1,22 +1,25 @@
 # Web Development Project
-This is my capstone project for CODE:You. The user is able to interact with the information provided by searching for information. The project utilizes a third-party api to retrieve information, that is then presented to the user with a helpful interface. The goal of the project is to demonstrate a general knowledge of HTML, CSS, and JavaScript with a little Node.js and express.
+This is my capstone project for CODE:You. The user is able to interact with the information provided by searching for information. The project utilizes a third-party api to retrieve information, that is then presented to the user with a helpful interface. The goal of the project is to demonstrate a general knowledge of HTML, CSS, and JavaScript with Node.js and express.
 
 ## Overview
  Hello! Welcome to Five Minute Farms! This website was made to show, in basic steps, how to grow the easy tomato plant, or any plant, from seeds. Also, according to my own research and web based research, plants DO respond to music and sounds! For this reason, a Spotify media player is embedded for users to see a sample playlist. A USDA planting zone chart shows temperature extremes based on US data, and when to avoid those extremes based on location. A growth chart is provided to show in days approximately how long it takes to grow from a seedling to "ready to plant" status. An images page shows various stages of seedlings and gardens. A jokes API was created to for users to get a joke or two to tell to their plants, and stores a running joke list on the page. Remember, plants love sounds and vibrations (and who doesn't love a good joke)! Finally, a simple contact page was created. Happy plants = happy harvest!
 
-## Resources
+  ## Resources
+  ---
+
 The resources I used for this project are as follows:
-  [Third-Party API] (https://official-joke-api.appspot.com/random_joke) 
-  -This provides the user random jokes to tell their seedlings and garden. This was a great way to put humor into a project.
-  [Research] (www.growoya.com)
-   -This website provides planting info according to the users zone based on location in the United States.
-  [Research] (www.w3schools.com)
-   - Growing Chart, based on my own research as a gardener for over five years.
-   [Research] (https://open.spotify.com) 
-   -An embedded music player from Spotify with playlist was included for users to explore.
-   [Research] (youtube.com) 
-   -This was used to research several videos regarding API usages, copilot AI, technology, coding and more.
-   [Research] (https://pistilsnursery.com/blogs/journal/music-and-plant-growth-heres-what-the-science-says#:~:text=Believe%20it%20or%20not%2C%20studies%20indicate%20that%20plants,to%20increase%2C%20while%20harsher%20metal%20music%20induced%20stress) One of the resources used to show gardens thrive with music. 
+
+- **Third-Party API**: (https://official-joke-api.appspot.com/random_joke) This API provides random jokes to entertain users and their gardens. It's a fun way to add humor to the project.
+
+- **GrowOya**: (www.growoya.com) This website offers planting information based on the user's zone in the United States.
+
+- **W3Schools**: (www.w3schools.com) A valuable resource for learning web development. The growing chart is based on my own research as a gardener for five years.
+
+- **Spotify**: (https://open.spotify.com) An embedded music player from Spotify with playlists for users to explore.
+
+- **YouTube**: (https://www.youtube.com/) Used to research various videos on API usage, Copilot AI, technology, coding, and more.
+
+- **Pistils Nursery**: (https://pistilsnursery.com/blogs/journal) One of the resources used to show that gardens thrive with music.
 
 ### Project Overview
 ---
