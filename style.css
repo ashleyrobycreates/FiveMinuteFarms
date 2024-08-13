@@ -129,6 +129,34 @@ canvas#myChart {
     width: 80%;
     max-width: 600px;
 }
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+}
+.contact-form input, .contact-form textarea, .contact-form button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+}
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #45a049;
+}
 -webkit-hyphens {
             overflow-wrap: break-word;
             word-wrap: break-word;
