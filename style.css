@@ -164,10 +164,10 @@ canvas#myChart {
             word-break: break-word;
             overflow-wrap: anywhere;
 }
-/* Media Queries for Small Screens */
+/* Media Query for Mobile Devices */
 @media (max-width: 600px) {
-    h1 {
-        font-size: large;
+    html {
+        font-size: 10px;
     }
     .container {
         grid-template-columns: 1fr; /* Single column layout */
@@ -176,21 +176,29 @@ canvas#myChart {
     .container > div {
         padding: 10px;
     }
+    .joke-box {
+        width: 90%;
+        font-size: 1.2em;
+    }
+    .contact-form {
+        width: 90%;
+    }
+    .contact-form input, .contact-form textarea, .contact-form button {
+        font-size: 0.9em;
+    }
+    h1 {
+        font-size: large;
+    }
+    h2 {
+        font-size: small;
+    }
     .cards, .card {
         width: 100%;
-        margin: 10px 0;
     }
-    .specific-img {
-        width: 100%;
+    header {
+        font-size: small;
     }
-    aside, header, footer {
-        padding: 10px;
-        margin: 10px 0;
-    }
-    canvas#myChart {
-        width: 100%;
-        height: auto;
-        margin: 2rem auto;
-        padding: 1rem;
+    footer {
+        font-size: x-small;
     }
 }
