@@ -1,7 +1,7 @@
 html { 
     justify-content: center;
-    font-size: small;
-    font-style: normal;
+    font-size: 12px;
+    font-style: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: green;
 }
@@ -25,7 +25,7 @@ h1 {
 /*Top of page grid*/
 .container {  
     display: grid;
-    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(7, 1fr); 
     gap: 5px; /* Gap between grid items */
     background-color: pink;
     border: 2px solid hsl(327, 97%, 49%);
@@ -107,7 +107,6 @@ footer {
     background-color: rgb(247, 6, 162);
     border: 5px solid #0c0b00;
 }
-
 canvas#myChart {
     width: 200%;
     height: 200%;
@@ -118,6 +117,18 @@ canvas#myChart {
     margin: 5rem auto;
     padding: 2rem;
 }
+.joke-box {
+    
+    border: 2px solid #4CAF50;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 1.5em;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
 -webkit-hyphens {
             overflow-wrap: break-word;
             word-wrap: break-word;
@@ -125,7 +136,6 @@ canvas#myChart {
             word-break: break-word;
             overflow-wrap: anywhere;
 }
-
 /* Media Queries for Small Screens */
 @media (max-width: 600px) {
     h1 {
